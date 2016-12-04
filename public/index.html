@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+	<meta name="viewport" content="width=device-width">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+
+	<title>Reddiato</title>
+
+
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<!-- BOOTSTRAP CDN -->
+	<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"> </script>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+	<!-- link js and cdn-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+
+
+	<script src="js/app.js"></script>
+	<!-- controllers -->
+	<script src="js/mainCtrl.js"></script>
+
+	
+
+
+	<!-- google fonts -->
+	<link rel="stylesheet" type="text/css"
+	         href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Droid+Sans">
+</head>
+
+
+
+<body ng-init ng-app='reddiato' ng-controller="mainController as mCtrl">
+	
+	<div>
+		<h2>{{mCtrl.title}}</h2>
+	</div>
+
+</body>
+</html>
