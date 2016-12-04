@@ -14,4 +14,21 @@ angular.module('reddiato', ['ngRoute', 'mainCtrl'])
 
 	    // $locationProvider.html5Mode(true);
 
+	})
+
+
+
+
+	.directive('homeSection', function() {
+		return {
+			restrict: 'A',
+			templateUrl: '../views/home.html'
+		}
+	})
+
+	.directive('tempSection', function() {
+		return {
+			restrict: 'A',
+			templateUrl: '../views/temp.html'
+		}
 	});
