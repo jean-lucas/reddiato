@@ -16,10 +16,17 @@ angular.module('reddiato', ['ngRoute', 'mainCtrl', 'threadCtrl'])
 
 })
 
-.directive('homeSection', function() {
+.directive('rFront', function() {
 	return {
 		restrict: 'A',
-		templateUrl: '../views/home.html'
+		templateUrl: '../views/rFront.html'
+	}
+})
+
+.directive('rPics', function() {
+	return {
+		restrict: 'A',
+		templateUrl: '../views/rPics.html'
 	}
 })
 
@@ -31,9 +38,9 @@ angular.module('reddiato', ['ngRoute', 'mainCtrl', 'threadCtrl'])
 })
 
 
-.directive('tempSection', function() {
+.directive('newThread', function() {
 	return {
 		restrict: 'A',
-		templateUrl: '../views/temp.html'
+		templateUrl: '../views/newThread.html'
 	}
 });

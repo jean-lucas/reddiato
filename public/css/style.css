@@ -5,6 +5,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.page-title {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
 .arrows{
   text-align: center;
   padding-right: 0 !important;

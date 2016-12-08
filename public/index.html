@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
 	<!-- Meta tags -->
 	<meta charset="UTF-8" />
@@ -10,22 +8,10 @@
 
 	<!-- Front end Frameworks -->
 	<!-- JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-	</script>
-
-	<title>Reddiato</title>
-
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="css/bootstrap-material-design.min.css">
-	<link rel="stylesheet" href="css/ripples.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/viewthread.css">
-
-	<!-- BOOTSTRAP CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap -->
 	<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<!--  Bootstrap Angular-->
 	<link rel="stylesheet" href="css/bootstrap-angular/bootstrap-material-design.min.css">
 	<link rel="stylesheet" href="css/bootstrap-angular/ripples.min.css">
@@ -46,8 +32,6 @@
 	<!-- google fonts -->
 	<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Droid+Sans"> -->
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One" rel="stylesheet">
-	<!-- Material Icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 	<!-- Reddiato Customs -->
 	<!-- Main App JS -->
@@ -56,18 +40,10 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/viewthread.css">
 	<!-- controllers -->
-	<script src="js/mainCtrl.js">
-	</script>
-	<script src="js/threadCtrl.js"></script>
-
-
-	<script>
-		$.material.init();
-	</script>
-
-
 	<script src="js/controllers/mainCtrl.js"></script>
+	<script src="js/controllers/threadCtrl.js"></script>
 	<!-- directives -->
 	<script src="js/directives/reddiatoTabs.js"></script>
 
@@ -79,13 +55,6 @@
 
 
 <body ng-init ng-app='reddiato' ng-controller="mainController as mCtrl">
-
-
-	<div>
-		<h2>{{mCtrl.title}}</h2>
-	</div>
-
-
 
 	<header reddiato-tabs>
 		<div class="subreddits_drawer">
@@ -117,26 +86,15 @@
 		</div>
 	</header>
 
-
 	<div id="drawer" drawer-section>
 	</div>
 
 	<div class="content">
-		<div id="r-front" style="display: block" home-section></div>
-		<div id="r-pics" temp-section></div>
+		<div id="r-front" style="display: block" r-front></div>
+		<div id="r-pics" r-pics></div>
 	</div>
 
-
-
-	<!-- <div home-section>
-		home
-	</div> -->
-
-	<!--
-<div class=" row" id="" temp-section>
-
-</div> -->
-
+	<div new-thread/>
 </body>
 
 </html>
