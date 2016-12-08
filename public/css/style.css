@@ -6,3 +6,28 @@ body {
 a {
   color: #00B7FF;
 }
+.arrows{
+  text-align: center;
+  padding-right: 0 !important;
+  color: #BABABA;
+}
+.score{
+  user-select:none;
+}
+/*.
+.up-arrow{
+
+  color: #BABABA;
+}
+
+.down-arrow{
+  color: #BABABA;
+}*/
+
+.up-arrow:hover{
+  color: orange;
+}
+
+.down-arrow:hover{
+  color: lightblue;
+}

@@ -1,4 +1,4 @@
-angular.module('reddiato', ['ngRoute', 'mainCtrl'])
+angular.module('reddiato', ['ngRoute', 'mainCtrl', 'threadCtrl'])
 
 
 .config(function($routeProvider, $locationProvider){
@@ -15,8 +15,6 @@ angular.module('reddiato', ['ngRoute', 'mainCtrl'])
 	    // $locationProvider.html5Mode(true);
 
 	})
-
-
 
 
 	.directive('homeSection', function() {

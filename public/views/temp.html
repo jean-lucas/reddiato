@@ -1,8 +1,45 @@
+<div ng-controller="threadController as threadCtrl" class="">
 
 
-<div class ="well">
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal">Open Modal</button>
+
+	<div id="modal" class="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="row">
+						<!-- Block of code for all arrows and scores hopefully -->
+						<div class="col-xs-1 arrows">
+
+							<i ng-click="upvote()" style="font-size:20px;" class="fa fa-arrow-up up-arrow" aria-hidden="true"></i>
+
+							<span class="score" ng-model="score">{{threadCtrl.score}}</span>
+
+							<i ng-click="downvote()" style="font-size:20px;" class="fa fa-arrow-down down-arrow" aria-hidden="true"></i>
+						</div>
+
+						<div class="col-xs-10">
+							<h4 class="modal-title">Thread Title</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<img class="post-image" src="https://i.redd.it/kjdf6aye662y.jpg">
+					<p></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div class ="well">
 	<h2>
 		from temp directive
 	</h2>
 	<a href="javascript:void(0)" class="btn btn-raised btn-warning">temp button</a>
-</div>
+</div> -->
