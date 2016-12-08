@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  user-select: none;
+  height: 40px;
+}
+
+header .subreddits_drawer,
+header .fill,
+header .new_thread,
+header .messages,
+header .user,
+header .tabs .tab {
+  position: relative;
+  padding: 12px 15px 7px;
+
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header .new_thread,
+header .messeges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .subreddits_drawer:hover,
+header .new_thread:hover,
+header .messages:hover,
+header .user:hover,
+header .tabs .tab:hover
+{
+  cursor: pointer;
+}
+
+header .tabs {
+  display: flex;
+}
+
+header .tabs .tab .close:hover {
+  font-weight: bold;
+}
+
+header .fill {
+  flex: 1;
+}
+
+header .tab .close {
+  position: absolute;
+  top: 0;
+  right: 3px;
+}
+
+header .tabs .active {
+ border-bottom: 0;
+}
