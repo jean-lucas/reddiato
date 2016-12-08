@@ -3,70 +3,108 @@
 
 
 <head>
+	<!-- Meta tags -->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
 	<meta name="viewport" content="width=device-width">
 
+	<!-- Front end Frameworks -->
+	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
-
-	<title>Reddiato</title>
-
-
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	  <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
-	  <link rel="stylesheet" href="css/ripples.min.css">
-	  <link rel="stylesheet" href="css/style.css">
-
-	<!-- BOOTSTRAP CDN -->
+	<!-- Bootstrap -->
 	<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"> </script>
-
-	<!-- font awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
-	<!-- link js and cdn-->
+	<!--  Bootstrap Angular-->
+	<link rel="stylesheet" href="css/bootstrap-angular/bootstrap-material-design.min.css">
+	<link rel="stylesheet" href="css/bootstrap-angular/ripples.min.css">
+	<script src="js/bootstrap-angular/material.min.js"></script>
+	<script src="js/bootstrap-angular/ripples.min.js"></script>
+	<script>
+	$.material.init();
+	</script>
+	<!-- Angular -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
 
-
-	<script src="js/app.js"></script>
-	<script src="js/material.min.js"></script>
-	<script src="js/ripples.min.js"></script>
-	<!-- controllers -->
-	<script src="js/mainCtrl.js"></script>
-
-	
-	<script>
-		$.material.init();
-	</script>
-		
-
-
+	<!-- Tools -->
+	<!-- Animate -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- google fonts -->
-	<link rel="stylesheet" type="text/css"
-	         href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Droid+Sans">
+	<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Droid+Sans"> -->
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One" rel="stylesheet">
+	<!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- Reddiato Customs -->
+	<!-- Main App JS -->
+	<script src="js/app.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/content.css">
+	<!-- controllers -->
+	<script src="js/controllers/mainCtrl.js"></script>
+	<!-- directives -->
+	<script src="js/directives/reddiatoTabs.js"></script>
+
+
+	<title>Reddiato</title>
 </head>
 
 
 
 <body ng-init ng-app='reddiato' ng-controller="mainController as mCtrl">
-	
-	<div>
-		<h2>{{mCtrl.title}}</h2>
+
+
+	<header reddiato-tabs>
+		<div class="subreddits_drawer">
+			Subreddits <span class="caret-r-l"> > </span>
+		</div>
+
+		<div class="tabs">
+			<div class="tab active">
+				<span class="subreddit_name">/r/front</span>
+				<span class="close">x</span>
+			</div>
+		</div>
+
+		<div class="fill"> </div>
+
+		<div class="new_thread">
+			<span class="name">
+				<img src="css/icons/ic_add_circle_outline.svg" alt="" />
+			</span>
+		</div>
+
+		<div class="messages">
+			<img src="css/icons/ic_chat_bubble_outline.svg" alt="" />
+		</div>
+
+		<div class="user">
+			Username
+		</div>
+	</header>
+
+	<div id="drawer" drawer-section>
+	</div>
+
+	<div class="content">
+		<div id="r-front" style="display: block" home-section></div>
+		<div id="r-pics" temp-section></div>
 	</div>
 
 
 
-	<div class=" row" id="" home-section>
-		
-	</div>
+	<!-- <div home-section>
+		home
+	</div> -->
 
+<!--
+<div class=" row" id="" temp-section>
 
-	<div class=" row" id="" temp-section>
-		
-	</div>
-	
-	<a href="javascript:void(0)" class="btn btn-raised btn-primary">Primary</a>
+</div> -->
+
 </body>
 </html>

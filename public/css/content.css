@@ -1,0 +1,20 @@
+.content {
+  padding: 15px;
+}
+
+.content > div {
+  display: none;
+  font-size: 30px;
+  /* This is so the divs stack when they are not displayed*/
+  position: absolute;
+}
+
+#drawer {
+  width: 250px;
+  height: calc(100vh - 40px);
+  background: white;
+  z-index: 2;
+  position: absolute;
+  left: -250px;
+  border-right: 1px solid black;
+}
