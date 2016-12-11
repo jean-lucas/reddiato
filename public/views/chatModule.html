@@ -1,0 +1,64 @@
+
+<div id="chatModuleWrapper" ng-controller="chatCtrl as cCtrl">
+	
+
+	
+
+	<div class="modal fade" id="chatModal" >
+
+
+    	<div class="modal-content" id="chatModalContent">
+
+      		<div id="chat__sideMenu">
+        		
+				<div class="btn-group-vertical" id="chat__sideMenu_group">
+					<button ng-repeat="contact in cCtrl.chatList" class="btn btn-raised">
+						<i class="fa-2x fa fa-user-circle-o" aria-hidden="true"></i> &nbsp; {{contact}}
+					</button>
+				  
+				</div>
+
+        	</div>
+
+			
+
+			<div id="chat_conversation">
+	        	<div id="chat_content">
+	        		blah <br>
+	        		blah 
+
+	        	</div>
+
+
+	        	<div id="chat_input">
+	        		
+	        		<div id="chat_inputBox">
+	        			<input type="text">
+	        		</div>
+
+	        		<div id="submitInput">
+						
+	        		</div>
+
+	        	</div>
+
+    	</div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+	<script>
+		// $('#chatModal').modal({
+		// 	show: 	true
+		// });
+	</script>
+</div>
+
+

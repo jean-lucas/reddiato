@@ -1,0 +1,55 @@
+
+
+
+
+#chatModalWrap {
+	position: relative;
+	background-color: tomato;
+}
+
+#chatModalContent {
+	position: absolute;
+	width: 50%;
+	background-color: #fff;
+	right: 2em;
+	top: 4em;
+}
+
+#chat__sideMenu {
+	padding: 0;
+	height: auto;
+	width: 25%;
+	position: relative;
+	left: 0;
+	display: inline;
+}
+
+#chat__sideMenu_group {
+	margin: 0
+}
+
+#chat__sideMenu_group > button {
+	text-align: left;
+	font-size: 1.5em;
+}
+
+
+#chat_conversation {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 75%;
+	right: 0;
+	background-color: #222;
+}
+
+#chat_content {
+	position: relative;
+	display: block;
+}
+
+#chat_input {
+	position: relative;
+	display: block;
+	bottom: 0;
+}

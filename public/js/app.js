@@ -1,4 +1,4 @@
-angular.module('reddiato', ['ngRoute', 'mainCtrl', 'drawerCtrl' ,'threadCtrl'])
+angular.module('reddiato', ['ngRoute', 'mainCtrl', 'drawerCtrl' ,'threadCtrl', 'chatCtrl'])
 
 
 .config(function($routeProvider, $locationProvider){
@@ -42,5 +42,13 @@ angular.module('reddiato', ['ngRoute', 'mainCtrl', 'drawerCtrl' ,'threadCtrl'])
 	return {
 		restrict: 'A',
 		templateUrl: '../views/newThread.html'
+	}
+})
+
+
+.directive('chatModule', function() {
+	return {
+		restrict: 'A',
+		templateUrl: '../views/chatModule.html'
 	}
 });
