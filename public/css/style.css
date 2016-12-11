@@ -6,9 +6,21 @@ a {
   color: #00B7FF;
 }
 
+hr {
+  background-color: #ccc;
+  border: none;
+  height: 1px;
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .page-title {
   text-align: center;
   font-family: 'Dancing Script', cursive;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 .arrows{
   text-align: center;

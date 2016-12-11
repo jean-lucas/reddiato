@@ -10,11 +10,20 @@
 }
 
 #drawer {
-  width: 250px;
+  width: 300px;
   height: calc(100vh - 40px);
   background: white;
   z-index: 999;
   position: absolute;
-  left: -250px;
+  left: -300px;
   border-right: 1px solid black;
+}
+
+.search-container {
+  width: 90%;
+}
+
+.empty {
+  margin-top: 15px;
+  text-align: center
 }
