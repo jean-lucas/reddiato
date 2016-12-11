@@ -1,3 +1,36 @@
 .post-image{
   max-width: 100%;
 }
+
+.comments{
+  border: 1px solid #BABABA;
+  padding: 0 0 0 0 !important;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% - 30px );
+  max-width: calc(100% - 30px);
+  min-height: 300px;
+}
+.comment{
+  margin-top:3px;
+  margin-bottom:3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 80px;
+}
+.minimize{
+  position:absolute;
+
+}
+
+.comment:hover{
+  background-color: #EAEAEA;
+}
+
+.username{
+  color: lightblue;
+}
+.username:hover{
+  color:blue;
+  cursor: pointer;
+}
