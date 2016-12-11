@@ -1,4 +1,4 @@
-angular.module('reddiato', ['ngRoute', 'mainCtrl', 'threadCtrl'])
+angular.module('reddiato', ['ngRoute', 'mainCtrl', 'drawerCtrl' ,'threadCtrl'])
 
 
 .config(function($routeProvider, $locationProvider){
