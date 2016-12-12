@@ -1,4 +1,4 @@
-angular.module('reddiato', ['ngRoute', 'mainCtrl', 'drawerCtrl' ,'threadCtrl', 'chatCtrl','userPageCtrl'])
+angular.module('reddiato', ['ngRoute', 'subredditCtrl', 'drawerCtrl' ,'threadCtrl', 'chatCtrl','userPageCtrl'])
 
 
 .config(function($routeProvider, $locationProvider){
