@@ -6,6 +6,5 @@ angular.module('mainCtrl', [])
 
 		$scope.openThread = function(){
 			$('#modal').modal('show');
-
 		};
 	});

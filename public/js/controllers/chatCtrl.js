@@ -6,11 +6,6 @@ angular.module('chatCtrl', [])
 		// this.chatList = ["bob bills", "cat man", "bill preston", "ted logan","bb","a","c","d"];
 
 
-		
-
-
-
-
 		this.activeChatId = 0;
 		this.currentBox = 0;
     this.msgWrite = "";
@@ -22,7 +17,7 @@ angular.module('chatCtrl', [])
 		}
 
     this.sendMsg =  function() {
-      
+
       if (self.msgWrite.length > 0) {
 
         var msg = {
@@ -30,9 +25,9 @@ angular.module('chatCtrl', [])
           "from" : 1,
           "date" : new Date(),
         }
-      
+
         self.chatList[self.activeChatId].chat.push(msg);
-      
+
         //clear message after
         self.msgWrite = "";
       }

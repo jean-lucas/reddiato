@@ -38,10 +38,10 @@ angular.module('reddiato', ['ngRoute', 'mainCtrl', 'drawerCtrl' ,'threadCtrl', '
 })
 
 
-.directive('newThread', function() {
+.directive('viewThread', function() {
 	return {
 		restrict: 'A',
-		templateUrl: '../views/newThread.html'
+		templateUrl: '../views/viewThreadModal.html'
 	}
 })
 

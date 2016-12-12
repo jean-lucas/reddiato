@@ -40,11 +40,7 @@
 							</div>
 						</div>
 						<!--  -->
-						<div class="row">
-							<div class="col-xs-12">
-								<textarea style="width:100%; max-width:100%;" name="comment" rows="4" cols="80"></textarea>
-							</div>
-						</div>
+
 						<div class="row">
 							<div class="col-xs-12 comments">
 								<div class="comment" ng-repeat="comm in comments track by $index" ng-mousehover="">
@@ -59,7 +55,8 @@
 										<div class="col-xs-11">
 											<div class="row">
 												<div class="col-xs-6">
-													<div class="username">{{comm["username"]}}</div> <div class="score">{{comm["score"]}} points  {{comm["timesince"]}}</div>
+													<div class="username">{{comm["username"]}}</div>
+													<div class="score">{{comm["score"]}} points {{comm["timesince"]}}</div>
 												</div>
 
 											</div>
@@ -85,10 +82,15 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-							<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+							<div class="row">
+								<div class="col-xs-12">
+									<textarea style="width:100%; max-width:100%;" name="comment" rows="4" cols="80"></textarea>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
