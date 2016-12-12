@@ -80,7 +80,7 @@
 
 		<div class="new_thread">
 			<span class="name">
-				<img src="css/icons/ic_add_circle_outline.svg" ng-click="openThread()" alt="" />
+				<img src="css/icons/ic_add_circle_outline.svg" alt="" />
 			</span>
 		</div>
 
@@ -90,7 +90,7 @@
 		</div>
 
 
-		<div class="user">
+		<div class="user" ng-click="mCtrl.goToUserPage()">
 			My Account
 		</div>
 	</header>
@@ -99,18 +99,21 @@
 	</div>
 
 	<div class="content">
+		
+
 		<div id="r-front" style="display: block;" class="container" r-front></div>
 		<div id="r-pics" r-pics></div>
+
+		<div id="r-user" user-page> </div>	
 	</div>
 
-
-	<div new-thread> </div>
+	<!-- <div new-thread> </div> -->
 	
 	
-
+	<div id="r-user" user-page> </div>	
 	<div chat-module> </div>
 	
-	<div user-page> </div>
+	
 
 </body>
 
