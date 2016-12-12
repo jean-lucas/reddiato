@@ -29,19 +29,18 @@ hr {
   padding-right: 0 !important;
   color: #BABABA;
 }
+
 .score{
   user-select:none;
 }
-/*.
-.up-arrow{
 
-  color: #BABABA;
+.up-arrow-select{
+  color: #e64a19;
 }
+.down-arrow-select{
+  color: #304ffe;
 
-.down-arrow{
-  color: #BABABA;
-}*/
-
+}
 .up-arrow:hover{
   color: orange;
 }

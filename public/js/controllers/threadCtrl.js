@@ -47,28 +47,37 @@ angular.module('threadCtrl', [])
         self.userVoted = false;
         self.score = 1226;
         $scope.show = true;
-        $("#viewThreadModal").modal('show');
+        // $("#viewThreadModal").modal('show');
 
         $scope.upvote = function() {
-            if (self.userVoted == 0) {
-                self.score = self.score + 1;
-                self.userVoted = true;
-            } else {
-                self.score = self.score - 1;
-                self.userVoted = false;
+            if ($('.down-arrow-select').length === 0) {
+
+                if (self.userVoted) {
+                    self.score = self.score + 1;
+                    self.userVoted = true;
+                } else {
+                    self.score = self.score - 1;
+                    self.userVoted = false;
+                }
+                // toggle color class
+                $("#uparrow").toggleClass("up-arrow-select");
             }
-            // toggle color class
         };
 
         $scope.downvote = function() {
-            if (self.userVoted == 0) {
-                self.score = self.score - 1;
-                self.userVoted = true;
-            } else {
-                self.score = self.score + 1;
-                self.userVoted = false;
+            if ($('.up-arrow-select').length === 0) {
+
+                if (self.userVoted) {
+                    self.score = self.score - 1;
+                    self.userVoted = true;
+                } else {
+                    self.score = self.score + 1;
+                    self.userVoted = false;
+                }
+                // toggle color class
+                $("#downarrow").toggleClass("down-arrow-select");
+                // code
             }
-            // toggle color class
         };
 
         // Minimize the comments
@@ -78,17 +87,20 @@ angular.module('threadCtrl', [])
 
         };
         $scope.submit = function(user) {
-          // console.log(username);
-          console.log(user)
+            // console.log(username);
+            console.log(user)
             if ($scope.newcomment.comment !== "") {
-              $scope.newcomment["username"] = user.username;
 
-              console.log($scope.newcomment)
-              $scope.comments.push(JSON.parse(JSON.stringify($scope.newcomment)));
-              // clear new comment obj
-              // $scope.newcomment["username"] = ;
-              $scope.newcomment["comment"] = "";
 
+                $scope.newcomment["username"] = user.username;
+
+                console.log($scope.newcomment)
+                $scope.comments.push(JSON.parse(JSON.stringify($scope.newcomment)));
+                // clear new comment obj
+                // $scope.newcomment["username"] = ;
+                $scope.newcomment["comment"] = "";
+                var objDiv = document.getElementById("comments");
+                objDiv.scrollTop = objDiv.scrollHeight;
             } else {
                 $scope.commentError = "Comment cannot be left empty";
             }

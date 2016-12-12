@@ -1,81 +1,97 @@
-.post-image{
-  max-width: 100%;
+.post-image {
+    max-width: 100%;
 }
 
-.comments{
-  border: 1px solid #BABABA;
-  padding: 0 0 0 0 !important;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: calc(100% - 30px );
-  max-width: calc(100% - 30px);
-  min-height: 300px;
-  max-height:300px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.comment{
-  position:relative;
-  margin-top:3px;
-  margin-bottom:3px;
-  padding-left: 15px;
-  padding-right: 15px;
-  /*min-height: 80px;*/
-
-}
-.minimize{
-  /*position:absolute;*/
-  /*z-index: -1;*/
-  left:0;
-  top:0;
-  user-select:none;
-}
-.minimize:hover{
-  color:red;
-  cursor: pointer;
-
-}
-.comment:hover{
-  background-color: #EAEAEA;
+.subtitle {
+    font-size: 10px;
+    display: inline;
+    vertical-align: top;
+    margin-right: 10px;
+    color: #666;
 }
 
-.username{
-  display: inline;
-  color: lightblue;
-  font-size: 14px;
+.modal-body {
+    padding-top: 0 !important;
 }
-.username:hover{
-  color:blue;
-  cursor: pointer;
-}
-.score{
-  margin-left: 5px;
-  display: inline;
-  font-size: 12px;
-  color: #BABABA;
-}
-.option{
-  color: #1A1A1A;
-  font-size: 10px;
-  text-align: center;
-}
-.option:hover{
-  cursor: pointer;
-  color: #BABABA;
 
+.comments {
+    border: 1px solid #BABABA;
+    padding: 0 0 0 0 !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-.height100{
-  height:100%;
-}
-.submit{
 
-  vertical-align: middle;
-  border: 1px solid #BABABA;
-  text-align: center;
-  user-select:none;
+.comment {
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*min-height: 80px;*/
 }
-.submit:hover{
-  cursor:pointer;
-  background-color: lightgrey;
 
+.minimize {
+    left: 0;
+    top: 0;
+    user-select: none;
+}
+
+.minimize:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.comment:hover {
+    background-color: #EAEAEA;
+}
+
+.username {
+    display: inline;
+    color: lightblue;
+    font-size: 14px;
+}
+
+.username:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.score {
+    margin-left: 5px;
+    display: inline;
+    font-size: 12px;
+    color: #BABABA;
+}
+
+.option {
+    color: #1A1A1A;
+    font-size: 10px;
+    text-align: center;
+}
+
+.option:hover {
+    cursor: pointer;
+    color: #BABABA;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.submit {
+    vertical-align: middle;
+    border: 1px solid #BABABA;
+    text-align: center;
+    user-select: none;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: lightgrey;
 }
