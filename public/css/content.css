@@ -1,12 +1,12 @@
 .content {
-  padding: 15px;
+  padding-top: 15px;
 }
-
 .content > div {
   display: none;
-  font-size: 30px;
+  /*font-size: 30px;*/
   /* This is so the divs stack when they are not displayed*/
   position: absolute;
+  width: 100%;
 }
 
 #drawer {
@@ -26,4 +26,17 @@
 .empty {
   margin-top: 15px;
   text-align: center
+}
+
+
+/* Move somewhere better maybe*/
+.shadow {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow:hover {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
