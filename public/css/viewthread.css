@@ -10,7 +10,9 @@
   width: calc(100% - 30px );
   max-width: calc(100% - 30px);
   min-height: 300px;
-  overflow-y:scroll;
+  max-height:300px;
+  overflow-y: scroll;
+
 }
 .comment{
   position:relative;
@@ -19,6 +21,7 @@
   padding-left: 15px;
   padding-right: 15px;
   /*min-height: 80px;*/
+
 }
 .minimize{
   /*position:absolute;*/
@@ -63,6 +66,14 @@
   height:100%;
 }
 .submit{
+
   vertical-align: middle;
+  border: 1px solid #BABABA;
+  text-align: center;
+  user-select:none;
+}
+.submit:hover{
+  cursor:pointer;
+  background-color: lightgrey;
 
 }
