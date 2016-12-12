@@ -1,9 +1,9 @@
 <div ng-controller="threadController as threadCtrl" class="">
 
 
-	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal">Open Modal</button>
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#viewThreadModal">Open Modal</button>
 
-	<div id="modal" class="modal">
+	<div id="viewThreadModal" class="modal">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -83,8 +83,11 @@
 						</div>
 						<div class="modal-footer">
 							<div class="row">
-								<div class="col-xs-12">
-									<textarea style="width:100%; max-width:100%;" name="comment" rows="4" cols="80"></textarea>
+								<div class="col-xs-11">
+									<textarea style="width:100%; max-width:100%;" ng-model="newcomment"  name="comment" rows="4" cols="80"></textarea>
+								</div>
+								<div style="padding-left:0px;" class="col-xs-1 ">
+									<div class="submit" ng-click="submit()" >Submit</div>
 								</div>
 							</div>
 						</div>

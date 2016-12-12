@@ -16,11 +16,13 @@ angular.module('threadCtrl', [])
                 timesince: "22 hours",
                 hidden: true
             }];
+
+        $scope.newcomment = {"username":"","comment": ""};
             // Set voting variable
         self.userVoted = false;
-
-        $scope.show = true;
-        // $("#modal").modal('show');
+        self.score = 1226;
+        // $scope.show = true;
+        $("#viewThreadModal").modal('show');
 
         $scope.upvote = function() {
             if (self.userVoted == 0) {
@@ -30,6 +32,7 @@ angular.module('threadCtrl', [])
                 self.score = self.score - 1;
                 self.userVoted = false;
             }
+            // toggle color class
         };
 
         $scope.downvote = function() {
@@ -40,6 +43,7 @@ angular.module('threadCtrl', [])
                 self.score = self.score + 1;
                 self.userVoted = false;
             }
+            // toggle color class
         };
 
         // Minimize the comments
