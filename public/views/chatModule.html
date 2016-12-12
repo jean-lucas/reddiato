@@ -9,18 +9,42 @@
 
     	<div class="modal-content" id="chatModalContent">
 
+    		<!-- Header of chat modal -->
+ <!--    		<div id="chat_title">
+    			My Messages
+    		</div> -->
+
+
+
+
+    		<!-- Side bar - contact for chat -->
 			<div class="btn-group-vertical" id="chat__sideMenu_group">
-				<button ng-repeat="contact in cCtrl.chatList track by $index" class="btn btn-raised" ng-click="cCtrl.selectChat($index)">
+
+				<div id="chat__sideMenu_title">
+					Contacts
+				</div>
+
+				<button ng-repeat="contact in cCtrl.chatList track by $index" class="btn btn-raised contactListBtn" ng-click="cCtrl.selectChat($index)">
 					<i class="fa-2x fa fa-user-circle-o" aria-hidden="true"></i> &nbsp; {{contact.name}}
 				</button>
+
+
 			  
 			</div>
 
 
 			
-
-			<div id="chat_conversation">
 			
+
+			<!-- Main conversation section -->
+			<div id="chat_conversation">
+				
+
+				<div id="chat_title">
+					Talking with {{cCtrl.chatList[cCtrl.activeChatId].name}}
+				</div>
+
+				<!-- Chat bubbles -->
 	        	<div id="chat_content">
 					
 					<div  ng-repeat="msg in cCtrl.chatList[cCtrl.activeChatId].chat | orderBy: 'date':true" 
@@ -31,17 +55,16 @@
 					<br>
 	        	</div>
 
-
+				
+				<!-- Send a message -->
 	        	<div id="chat_input">
-	        		
 	        		<div id="chat_inputBox">
 	        			<textarea placeholder="Write a message..." ng-model="cCtrl.msgWrite"></textarea>
 	        		</div>
 
 	        		<div id="submitInput">
-						<button class="btn btn-raised btn-primary" type="submit" id="sendMessageBtn" ng-click="cCtrl.sendMsg()"> SEND</button>
+						<button class="btn btn-raised btn-primary" type="submit" id="sendMessageBtn" ng-click="cCtrl.sendMsg()"> SEND </button>
 	        		</div>
-
 	        	</div>
 
     		</div>

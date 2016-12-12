@@ -3,7 +3,6 @@
 
 
 
-
 #chatModalContent {
 	position: relative;
 	width: 50%;
@@ -12,11 +11,20 @@
 	top: 4em;
 	float: right;
 	overflow: hidden;
-	height: 30em;
-	max-height: 30em;
+	height:  35em;
+	max-height: 35em;
 }
 
 
+
+#chat__sideMenu_title {
+	text-align: center;
+	font-size: 1.2em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	margin: 0;
+	font-family: inherit;
+}
 
 #chat__sideMenu_group {
 	margin: 0;
@@ -28,11 +36,19 @@
 	overflow-y: auto;
 }
 
-#chat__sideMenu_group > button {
-	text-align: left;
-	font-size: 1.1em;
-	padding: .5em 1em;
+.contactListBtn:nth-child(odd) {
+	background-color: #ddd;
 }
+
+
+
+.contactListBtn {
+	text-align: left;
+	background-color: red;
+	font-size: 1.1em;
+	padding: .8em 1em;
+}
+
 
 
 #chat_conversation {
@@ -46,15 +62,29 @@
 
 }
 
+
+
+#chat_title {
+	position: relative;
+	z-index: 2;
+	display: block;
+	background-color: #888;
+	font-size: 1.4em;
+	text-align: right;
+	vertical-align: middle;
+	padding: 0.5em 1em;
+	height: 10%;
+	color:  #eee;
+}
 #chat_content {
-	position: absolute;
+	position: relative;
 	display: block;
 	top:0;
 	width: 100%;
-	height: 85%;
+	height: 75%;
 	/*height: 20em;*/
 	padding: 1em;
-	background-color: #ddd;
+	background-color: #eee;
 	overflow-y: auto;
 }
 
@@ -71,7 +101,8 @@
 .chatBoxes_left {
 	position: relative;
 	width: 50%;
-	background-color: yellow;
+	background-color: #2980A3;
+	color: #eee;
 	display: block;
 }
 
@@ -79,7 +110,8 @@
 	position: relative;
 	width: 50%;
 	left: 50%;
-	background-color: green;
+	background-color: #23B08C;
+	color: #eee;
 	display: block;
 }
 
@@ -89,6 +121,10 @@
 	bottom: 0;
 	width: 100%;
 	height: 15%;
+	border-top: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+
+
 }
 
 #chat_inputBox {
@@ -131,5 +167,5 @@
 	width: 100%;
 	margin: 0;	
 	font-size: 1.6em;
-
+	background-color: #23B08C;
 }
