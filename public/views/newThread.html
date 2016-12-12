@@ -27,7 +27,7 @@
 				<div class="modal-body">
 					<div class="row">
 						<div class="col-xs-10 col-xs-offset-1">
-							<img class="post-image" src="https://i.redd.it/kjdf6aye662y.jpg">
+							<!-- <img class="post-image" src="https://i.redd.it/kjdf6aye662y.jpg"> -->
 						</div>
 					</div>
 					<br><br>
@@ -47,28 +47,38 @@
 						</div>
 						<div class="row">
 							<div class="col-xs-12 comments">
-								<div class="comment" ng-repeat="i in [0,1,2,3,4]" ng-mousehover="">
+								<div class="comment" ng-repeat="comm in comments track by $index" ng-mousehover="">
 
 									<!-- each comments row/col 12 -->
 									<div class="row">
-										<div class="minimize" ng-click="" >[-]</div>
-										<div class="col-xs-12">
-											<div class="row">
-												<div class="col-xs-2">
-													<div class="username">plukovga</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-xs-12">
-													Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure "eh it's a job, beats retail anyways"
-													<br>
-													Haven't decided which one is funnier to me
-												</div>
-											</div>
+										<div class="col-xs-1">
 
-
+											<div class="minimize" ng-click="minimize($index)"><span>[-]</span></div>
 										</div>
-										<div>
+
+										<div class="col-xs-11">
+											<div class="row">
+												<div class="col-xs-6">
+													<div class="username">{{comm["username"]}}</div> <div class="score">{{comm["score"]}} points  19 hours</div>
+												</div>
+
+											</div>
+											<!-- What should be hidden  -->
+											<div ng-model="comments[$index]['hidden']" ng-hide="comments[$index]['hidden']">
+												<div class="row">
+													<div class="col-xs-12">
+														{{comm.comment}}
+													</div>
+												</div>
+												<div class="row" ng-hide="comm.hidden">
+													<div class="col-xs-2 option">
+														Reply
+													</div>
+													<div class="col-xs-2 option">
+														Save
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
