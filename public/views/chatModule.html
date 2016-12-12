@@ -1,0 +1,103 @@
+
+<div id="chatModuleWrapper" ng-controller="chatCtrl as cCtrl">
+	
+
+	
+
+	<div class="modal fade" id="chatModal" >
+
+
+    	<div class="modal-content" id="chatModalContent">
+
+    		<!-- Header of chat modal -->
+ <!--    		<div id="chat_title">
+    			My Messages
+    		</div> -->
+
+
+
+
+    		<!-- Side bar - contact for chat -->
+			<div class="btn-group-vertical" id="chat__sideMenu_group">
+
+				<div id="chat__sideMenu_title">
+					Contacts
+				</div>
+
+				<button ng-repeat="contact in cCtrl.chatList track by $index" class="btn btn-raised contactListBtn" ng-click="cCtrl.selectChat($index)">
+					<i class="fa-2x fa fa-user-circle-o" aria-hidden="true"></i> &nbsp; {{contact.name}}
+				</button>
+
+
+			  
+			</div>
+
+
+			
+			
+
+			<!-- Main conversation section -->
+			<div id="chat_conversation">
+				
+
+				<div id="chat_title">
+					Talking with {{cCtrl.chatList[cCtrl.activeChatId].name}}
+				</div>
+
+				<!-- Chat bubbles -->
+	        	<div id="chat_content">
+					
+					<div  ng-repeat="msg in cCtrl.chatList[cCtrl.activeChatId].chat | orderBy: 'date':true" 
+						class="well chatBoxes" ng-class="{chatBoxes_left: msg.from == 0, chatBoxes_right: msg.from == 1}">
+							{{msg.text}}
+
+					</div>
+					<br>
+	        	</div>
+
+				
+				<!-- Send a message -->
+	        	<div id="chat_input">
+	        		<div id="chat_inputBox">
+	        			<textarea placeholder="Write a message..." ng-model="cCtrl.msgWrite"></textarea>
+	        		</div>
+
+	        		<div id="submitInput">
+						<button class="btn btn-raised btn-primary" type="submit" id="sendMessageBtn" ng-click="cCtrl.sendMsg()"> SEND </button>
+	        		</div>
+	        	</div>
+
+    		</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+	<script>
+	//send conversation to bottom of div
+		$('.messages').on('click', function() {
+			setTimeout(function(){
+				var chatConversation = document.getElementById("chat_content");
+				chatConversation.scrollTop = chatConversation.scrollHeight;
+
+				console.log(chatConversation.scrollHeight);
+			}, 200	);
+		});
+
+		
+
+		
+
+		$('#sendMessageBtn').on('click', function() {
+			$("#chat_content").animate({ scrollTop: $('#chat_content').prop("scrollHeight")}, 1000);
+		});
+
+	</script>
+</div>
+
+

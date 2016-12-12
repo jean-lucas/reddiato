@@ -19,6 +19,7 @@
 	<script src="js/bootstrap-angular/ripples.min.js"></script>
 	<script>
 		$.material.init();
+	
 	</script>
 	<!-- Angular -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
@@ -28,7 +29,8 @@
 	<!-- Animate -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- font awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="css/fa/css/font-awesome.min.css">
 	<!-- google fonts -->
 	<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Droid+Sans"> -->
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One" rel="stylesheet">
@@ -41,10 +43,13 @@
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/content.css">
 	<link rel="stylesheet" href="css/viewthread.css">
+	<link rel="stylesheet" href="css/chatModule.css">
+
 	<!-- controllers -->
 	<script src="js/controllers/mainCtrl.js"></script>
 	<script src="js/controllers/threadCtrl.js"></script>
 	<script src="js/controllers/drawerCtrl.js"></script>
+	<script src="js/controllers/chatCtrl.js"></script>
 	<!-- directives -->
 	<script src="js/directives/reddiatoTabs.js"></script>
 
@@ -75,8 +80,9 @@
 			</span>
 		</div>
 
-		<div class="messages">
+		<div class="messages" type="button"  data-toggle="modal" data-target="#chatModal">
 			<img src="css/icons/ic_chat_bubble_outline.svg" alt="" />
+			
 		</div>
 
 
@@ -93,7 +99,12 @@
 		<div id="r-pics" r-pics></div>
 	</div>
 
-	<div new-thread/>
+	<!-- <div new-thread> </div> -->
+	
+	
+	<div chat-module> </div>
+
+
 </body>
 
 </html>
