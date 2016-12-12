@@ -1,5 +1,5 @@
 angular.module('mainCtrl', [])
-	.controller('mainController', function() {
+	.controller('mainController', function($scope) {
 		var self = this;
 
 		this.title = "Reddiato";

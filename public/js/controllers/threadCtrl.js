@@ -32,8 +32,8 @@ angular.module('threadCtrl', [])
                 self.score = self.score - 1;
                 self.userVoted = false;
             }
-
         };
+
         $scope.downvote = function() {
             if (self.userVoted == 0) {
                 self.score = self.score - 1;
@@ -43,9 +43,10 @@ angular.module('threadCtrl', [])
                 self.userVoted = false;
             }
         };
+
+        // Minimize the comments
         $scope.minimize = function(index) {
           $scope.show = !$scope.show;
-
           $scope.comments[index].hidden = !$scope.comments[index].hidden;
 
         };
