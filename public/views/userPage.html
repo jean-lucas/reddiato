@@ -2,9 +2,65 @@
 <div id="userPageWrapper" ng-controller="userPageCtrl as uCtrl">
 
 	
-	<div class="well">
-		<button ng-click="uCtrl.do()">test</button>
+
+	<!-- user page header -->
+	
+	<div  id="userPageHeader">
+		<h1> {{sCtrl.allUsers[sCtrl.currentUserId].username}} </h1>
+
+		<!-- user stats -->
+		<div class="userStats">
+			<div class="userStatsWord">
+				Post Karma: {{sCtrl.allUsers[sCtrl.currentUserId].karma}} <br>
+				Member Since : {{sCtrl.allUsers[sCtrl.currentUserId].memberSince | date : "MMMM y"}}
+
+				<div class="userContact" ng-show="{{sCtrl.currentUserId == 0}}">
+				<button class="btn btn-raised btn-primary">
+					Message {{sCtrl.allUsers[sCtrl.currentUserId].username}}
+				</button>
+				 
+				</div>
+			</div>
+		</div>
+			
+
+		<!-- user contact -->
+
+		
+
+	
 	</div>
+	<br><br><br><br>
 
 
+	<hr>
+
+
+
+	<!-- user page content switch-->
+	<div id="userPageContentWrapper">
+		<div class="togglebutton" id="toggleUserContent">
+		Posts &nbsp;
+			<label>
+				  <input type="checkbox" checked="" ng-click="uCtrl.go()" ng-model="uCtrl.toggleVal"> <span class="toggle"></span> 
+			</label>
+		&nbsp;Comments
+		</div>
+
+		<!-- user page content -->
+		<div class="well" id="userPageContent">
+			
+
+			<div ng-show="uCtrl.toggleVal"> Comments </div>
+
+
+
+			<div ng-hide="uCtrl.toggleVal"> Posts </div>
+
+		</div>
+		
+
+
+	</div>
+	
 </div>

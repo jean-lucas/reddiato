@@ -3,11 +3,12 @@ angular.module('userPageCtrl', [])
 
 
 	.controller('userPageCtrl',  function($scope){
+		var self = this;
 
+		this.userName = "username";
 
+		this.toggleVal;
 
-		this.do = function(){
-			var newTab = $scope.createTab("test");
-			$scope.tabs.prepend(newTab);
-		};
+		
+		
 	})

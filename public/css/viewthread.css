@@ -10,7 +10,9 @@
   width: calc(100% - 30px );
   max-width: calc(100% - 30px);
   min-height: 300px;
-  overflow-y:scroll;
+  max-height:300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .comment{
   position:relative;
@@ -19,6 +21,7 @@
   padding-left: 15px;
   padding-right: 15px;
   /*min-height: 80px;*/
+
 }
 .minimize{
   /*position:absolute;*/
@@ -46,16 +49,33 @@
   cursor: pointer;
 }
 .score{
-  margin-left: 15px;
+  margin-left: 5px;
   display: inline;
   font-size: 12px;
   color: #BABABA;
 }
 .option{
   color: #1A1A1A;
+  font-size: 10px;
+  text-align: center;
 }
 .option:hover{
   cursor: pointer;
   color: #BABABA;
+
+}
+.height100{
+  height:100%;
+}
+.submit{
+
+  vertical-align: middle;
+  border: 1px solid #BABABA;
+  text-align: center;
+  user-select:none;
+}
+.submit:hover{
+  cursor:pointer;
+  background-color: lightgrey;
 
 }
