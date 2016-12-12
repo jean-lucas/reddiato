@@ -19,7 +19,7 @@
 	<script src="js/bootstrap-angular/ripples.min.js"></script>
 	<script>
 		$.material.init();
-	
+
 	</script>
 	<!-- Angular -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
@@ -76,13 +76,13 @@
 
 		<div class="new_thread">
 			<span class="name">
-				<img src="css/icons/ic_add_circle_outline.svg" alt="" />
+				<img src="css/icons/ic_add_circle_outline.svg" ng-click="openThread()" alt="" />
 			</span>
 		</div>
 
 		<div class="messages" type="button"  data-toggle="modal" data-target="#chatModal">
 			<img src="css/icons/ic_chat_bubble_outline.svg" alt="" />
-			
+
 		</div>
 
 
@@ -100,8 +100,8 @@
 	</div>
 
 	<!-- <div new-thread> </div> -->
-	
-	
+
+
 	<div chat-module> </div>
 
 

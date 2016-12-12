@@ -4,6 +4,8 @@ angular.module('mainCtrl', [])
 
 		this.title = "Reddiato";
 
-		// $('#modal').modal('show');
+		$scope.openThread = function(){
+			$('#modal').modal('show');
 
+		};
 	});

@@ -7,11 +7,13 @@ angular.module('threadCtrl', [])
                 "username": "plukovga",
                 "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
                 score: 1136,
+                timesince: "1 day",
                 hidden: false
             }, {
                 "username": "usertwo.name",
                 "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
                 score: 745,
+                timesince: "22 hours",
                 hidden: true
             }];
             // Set voting variable
