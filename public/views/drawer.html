@@ -10,7 +10,7 @@
     </div>
   </div>
 
-  <div class="results-container" ng-repeat="subreddit in fsubreddits = (drawerCtrl.subreddits | filter:search | limitTo:8)">
+  <div class="results-container" ng-repeat="subreddit in fsubreddits = (drawerCtrl.subreddits | filter:search | limitTo:7)">
     <div ng-click="drawerCtrl.goTo(subreddit)" class="subreddits">{{subreddit}}</div>
     <hr/>
   </div>
