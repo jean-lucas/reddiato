@@ -1,0 +1,69 @@
+
+
+#userPageWrapper {
+	position: relative;
+	display: block;
+	height: 100vh;
+	overflow: hidden;
+
+}
+#userPageHeader {
+	position: relative;
+	display: block;
+	/*margin: 0 8em;*/
+	/*padding: 1em;*/
+	width: 75%;
+	height: 25%;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+}
+#userPageHeader > h1 {
+	position: relative;
+	font-size: 4em;
+	left: 1em;
+}
+.userStats {
+	position: relative;
+	font-size: 1.5em;
+	float: right;
+}
+.userStatsWord {
+	position: relative;
+	width: auto;
+	float: right: ;
+}
+
+#userPageContentWrapper {
+	position: relative;
+	display: block;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 75%
+	margin-top: 1em;
+}
+
+#toggleUserContent {
+	position: relative;
+	text-align: center;
+	font-size: 3em;
+}
+
+#toggleUserContent > label {
+	position: relative;
+	color: black;
+	top: -10px;
+	
+}
+#toggleUserContent > span {
+	color: black;
+	font-size: 0.8em;
+}
+
+#userPageContent {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 70%
+
+}
