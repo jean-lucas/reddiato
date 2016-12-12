@@ -13,7 +13,7 @@
 	<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<!--  Bootstrap Angular-->
-	<link rel="stylesheet" href="css/bootstrap-angular/bootstrap-material-design.min.css">
+	<link rel="stylesheet" href="css/bootstrap-angular/bootstrap-material-design.css">
 	<link rel="stylesheet" href="css/bootstrap-angular/ripples.min.css">
 	<script src="js/bootstrap-angular/material.min.js"></script>
 	<script src="js/bootstrap-angular/ripples.min.js"></script>
@@ -45,6 +45,7 @@
 	<link rel="stylesheet" href="css/viewthread.css">
 	<link rel="stylesheet" href="css/chatModule.css">
 	<link rel="stylesheet" href="css/userPage.css">
+	<link rel="stylesheet" href="css/rFront.css">
 
 	<!-- controllers -->
 	<script src="js/controllers/subredditCtrl.js"></script>
@@ -64,49 +65,16 @@
 
 <body ng-init ng-app='reddiato' ng-controller="subredditController as sCtrl">
 
-	<header reddiato-tabs>
-		<div class="subreddits_drawer">
-			Subreddits <span class="caret-r-l"> > </span>
-		</div>
+	<header reddiato-tabs></header>
 
-		<div class="tabs">
-			<div class="tab active">
-				<span class="subreddit_name">/r/front</span>
-				<span class="close">x</span>
-			</div>
-		</div>
-
-		<div class="fill"> </div>
-
-		<div class="new_thread">
-			<span class="name">
-				<img src="css/icons/ic_add_circle_outline.svg" ng-click="openThread()" alt="" />
-			</span>
-		</div>
-
-		<div class="messages" type="button"  data-toggle="modal" data-target="#chatModal">
-			<img src="css/icons/ic_chat_bubble_outline.svg" alt="" />
-
-		</div>
-
-
-		<div class="user">
-			My Account
-		</div>
-	</header>
-
-	<div id="drawer" drawer-section>
-	</div>
+	<div id="drawer" drawer-section></div>
 
 	<div class="content">
 		<div id="r-front" style="display: block;" class="container" r-front></div>
 		<div id="r-pics" r-pics></div>
 	</div>
 
-
-	<div view-thread> </div>
-
-
+	<div new-thread> </div>
 
 	<div chat-module> </div>
 

@@ -10,17 +10,18 @@ angular.module('reddiato')
     var out = false;
     $(scope.subredditDrawer).on('click', function() {
       out = !out;
-      if (out) {
-        $('.subreddits_drawer .caret-r-l').text('<');
-        $('#drawer').animate({
-          left: '0'
-        });
-      } else {
-        $('.subreddits_drawer .caret-r-l').text('>');
-        $('#drawer').animate({
-          left: '-300px'
-        });
-      }
+      // if (out) {
+      //   // $('.subreddits_drawer .caret-r-l').text('<');
+      //   $('#drawer').animate({
+      //     left: '0'
+      //   });
+      // } else {
+      //   // $('.subreddits_drawer .caret-r-l').text('>');
+      //   $('#drawer').animate({
+      //     left: '-300px'
+      //   });
+      // }
+      $('#drawer').slideToggle("slow");
     });
 
     // Handle switching tabs
@@ -65,8 +66,9 @@ angular.module('reddiato')
       return tab;
     };
 
-    scope.switchContent = function(subredditName) {
-      var content_id = '#r-' + subredditName.substring(3);
+    scope.switchContent = function(tabName) {
+      var tabType = tabName.split('/')[1];
+      var content_id = '#'+ tabType +'-' + tabName.substring(3);
       $('body').find('.content').children().fadeOut('slow', function() {
         $(content_id).fadeIn('slow')
       });
@@ -77,6 +79,7 @@ angular.module('reddiato')
 
   return {
     restrict: 'A',
-    link: linkFn
+    link: linkFn,
+    templateUrl: '../../views/reddiatoTabs.html'
   };
 })

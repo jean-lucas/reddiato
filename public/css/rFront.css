@@ -1,0 +1,42 @@
+.thread-header {
+  padding: 10px;
+}
+
+.thread-body {
+  color: #666;
+}
+.thread-body .user {
+  color: lightblue;
+}
+
+.thread-body .user:hover {
+  cursor: pointer;
+  color: blue
+}
+
+.thread-body .subreddit:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+.thread-body .time {
+  position: absolute;
+  right: 10px;
+  font-size: 0.75em;
+}
+
+.thread-body .num-comments {
+  position: absolute;
+  right: 10px;
+  font-size: 0.75em;
+}
+
+.thread-body .thread-score {
+  display: inline;
+  font-size: 12px;
+  color: #666;
+}
+
+.card-spacing {
+  margin-bottom: 15px;
+}

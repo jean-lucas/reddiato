@@ -10,17 +10,62 @@
 }
 
 #drawer {
+  display: none;
   width: 300px;
-  height: calc(100vh - 40px);
+  height: calc(70vh - 40px);
   background: white;
   z-index: 999;
   position: absolute;
-  left: -300px;
+  top: 100px;
+  border-top: 1px solid black;
   border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#drawer:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50px;
+  top: -50px;
+  border:25px solid;
+  border-color: transparent transparent black black;
+}
+
+#drawer:after {
+  content:' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 51px;
+  top: -48px;
+  border: 24px solid;
+  border-color: transparent transparent white white;
 }
 
 .search-container {
   width: 90%;
+}
+
+.results-container {
+  margin-top: 15px;
+}
+
+.results-container .subreddits {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+}
+
+.results-container .subreddits:hover {
+  cursor: pointer;
+  border: 1px solid gray;
+  background: gray;
+  border-radius: 5px;
 }
 
 .empty {

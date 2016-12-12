@@ -1,21 +1,30 @@
 <div class="row">
 	<div class="col-lg-2 col-sm-4" ng-repeat="i in [1,2,3,4,5,6]">
-		<div class="card shadow">
-			<div class="card-height-indicator"></div>
+		<div class="card shadow card-spacing">
 			<div class="card-content">
-				<div class="card-header">
-					<p style="text-align: center"> Picture Post </p>
+				<div class="card-header thread-header">
+					Thread Name make the thread name longer than it needs to be
 				</div>
 
 				<div class="card-image">
 					<img src="https://placekitten.com/g/450/300" alt="Loading image...">
 				</div>
 
-				<div class="card-body">
-					<p>
-						Scratch Belly </br>
-						<span>Post Information</span>
-					</p>
+				<div class="card-body thread-body">
+					<div>
+						<span class="user">user</span>
+						<span class="subreddit">&bull; /r/subreddit</span>
+						<span class="time"> 10 mins ago.</span>
+					</div>
+					<div>
+						<span class="arrows">
+							<i ng-click="upvote()" style="font-size:20px;" class="fa fa-arrow-up up-arrow" aria-hidden="true"></i>
+							<span class="thread-score">1254</span>
+							<i ng-click="downvote()" style="font-size:20px;" class="fa fa-arrow-down down-arrow" aria-hidden="true"></i>
+						</span>
+						<span class="num-comments">1934 comments</span>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -26,16 +35,29 @@
 
 <div class="row">
 	<div class="col-lg-6 col-sm-12" ng-repeat="i in [1,2,3,4,5,6]">
-		<div class="card shadow" style="height: 80px;">
-			<div class="card-height-indicator"></div>
+		<div class="card shadow card-spacing">
 			<div class="card-content">
 
-				<div class="card-body">
-					<p>
-						<span>Text post </span>
-						<span style="color: gray">Post Information: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
-
-					</p>
+				<div class="card-body thread-body">
+					<div>
+						Thread Name Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Thread Name Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</div>
+					<div>
+						<div>
+							<span class="user">user</span>
+							<span class="subreddit">&bull; /r/subreddit</span>
+							<span class="time"> 10 mins ago.</span>
+						</div>
+						<div>
+							<span class="arrows">
+								<i ng-click="upvote()" style="font-size:20px;" class="fa fa-arrow-up up-arrow" aria-hidden="true"></i>
+								<span class="thread-score">1254</span>
+								<i ng-click="downvote()" style="font-size:20px;" class="fa fa-arrow-down down-arrow" aria-hidden="true"></i>
+							</span>
+							<span class="num-comments">1934 comments</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
