@@ -18,11 +18,9 @@ angular.module('threadCtrl', [])
             }];
             // Set voting variable
         self.userVoted = false;
-        self.score = 2312;
-
 
         $scope.show = true;
-        $("#modal").modal('show');
+        // $("#modal").modal('show');
 
         $scope.upvote = function() {
             if (self.userVoted == 0) {

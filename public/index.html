@@ -47,7 +47,7 @@
 	<link rel="stylesheet" href="css/userPage.css">
 
 	<!-- controllers -->
-	<script src="js/controllers/mainCtrl.js"></script>
+	<script src="js/controllers/subredditCtrl.js"></script>
 	<script src="js/controllers/threadCtrl.js"></script>
 	<script src="js/controllers/drawerCtrl.js"></script>
 	<script src="js/controllers/chatCtrl.js"></script>
@@ -62,7 +62,7 @@
 
 
 
-<body ng-init ng-app='reddiato' ng-controller="mainController as mCtrl">
+<body ng-init ng-app='reddiato' ng-controller="subredditController as sCtrl">
 
 	<header reddiato-tabs>
 		<div class="subreddits_drawer">
@@ -90,7 +90,7 @@
 		</div>
 
 
-		<div class="user" ng-click="mCtrl.goToUserPage()">
+		<div class="user" ng-click="sCtrl.goToUserPage()">
 			My Account
 		</div>
 	</header>
@@ -104,13 +104,13 @@
 		<div id="r-front" style="display: block;" class="container" r-front></div>
 		<div id="r-pics" r-pics></div>
 
-		<div id="r-user" user-page> </div>	
+		<div id="r-bob" user-page> </div>	
 	</div>
 
-	<!-- <div new-thread> </div> -->
+	<div new-thread> </div>
 	
-	
-	<div id="r-user" user-page> </div>	
+
+
 	<div chat-module> </div>
 	
 	

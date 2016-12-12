@@ -16,7 +16,7 @@ angular.module('chatCtrl', [])
 		}
 
     this.sendMsg =  function() {
-      
+
       if (self.msgWrite.length > 0) {
 
         var msg = {
@@ -24,9 +24,9 @@ angular.module('chatCtrl', [])
           "from" : 1,
           "date" : new Date(),
         }
-      
+
         self.chatList[self.activeChatId].chat.push(msg);
-      
+
         //clear message after
         self.msgWrite = "";
       }
