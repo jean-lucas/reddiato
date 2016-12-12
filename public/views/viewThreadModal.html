@@ -1,9 +1,9 @@
 <div ng-controller="threadController as threadCtrl" class="">
 
 
-	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal">Open Modal</button>
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#viewThreadModal">Open Modal</button>
 
-	<div id="modal" class="modal">
+	<div id="viewThreadModal" class="modal">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -40,39 +40,38 @@
 							</div>
 						</div>
 						<!--  -->
-
-						<div class="row">
+						<div class="row" style="overflow-y: hidden;">
 							<div class="col-xs-12 comments">
-								<div class="comment" ng-repeat="comm in comments track by $index" ng-mousehover="">
-
-									<!-- each comments row/col 12 -->
-									<div class="row">
-										<div class="col-xs-1">
-
-											<div class="minimize" ng-click="minimize($index)"><span>[-]</span></div>
-										</div>
-
-										<div class="col-xs-11">
-											<div class="row">
-												<div class="col-xs-6">
-													<div class="username">{{comm["username"]}}</div>
-													<div class="score">{{comm["score"]}} points {{comm["timesince"]}}</div>
-												</div>
-
+								<div class="row comment" ng-repeat="comm in comments track by $index" ng-mousehover="">
+									<div class="col-xs-12">
+										<!-- each comments row/col 12 -->
+										<div class="row">
+											<div class="col-xs-1">
+												<div class="minimize" ng-click="minimize($index)"><span>[-]</span></div>
 											</div>
-											<!-- What should be hidden  -->
-											<div ng-model="comments[$index]['hidden']" ng-hide="comments[$index]['hidden']">
+
+											<div class="col-xs-11">
 												<div class="row">
-													<div class="col-xs-12">
-														{{comm.comment}}
+													<div class="col-xs-6">
+														<div class="username">{{comm["username"]}}</div>
+														<div class="score">{{comm["score"]}} points {{comm["timesince"]}}</div>
 													</div>
+
 												</div>
-												<div class="row" ng-hide="comm.hidden">
-													<div class="col-xs-2 option">
-														Reply
+												<!-- What should be hidden  -->
+												<div ng-model="comments[$index]['hidden']" ng-hide="comments[$index]['hidden']">
+													<div class="row">
+														<div class="col-xs-12">
+															{{comm.comment}}
+														</div>
 													</div>
-													<div class="col-xs-2 option">
-														Save
+													<div class="row" ng-hide="comm.hidden">
+														<div class="col-xs-2 option">
+															Reply
+														</div>
+														<div class="col-xs-2 option">
+															Save
+														</div>
 													</div>
 												</div>
 											</div>
@@ -83,8 +82,16 @@
 						</div>
 						<div class="modal-footer">
 							<div class="row">
-								<div class="col-xs-12">
-									<textarea style="width:100%; max-width:100%;" name="comment" rows="4" cols="80"></textarea>
+								<div class="col-xs-11" style="">
+									<textarea style="width:100%; max-width:100%;" ng-model="newcomment.comment" name="comment" rows="4" cols="80"></textarea>
+								</div>
+								<div style="padding-right: 0px;padding-left:0px;" class="col-xs-1 ">
+									<div class="submit" ng-click="submit()">Submit</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-offset-2 col-xs-8" style="text-align:center; color:red;">
+									<p class="comment-error" ng-model="commentError">{{commentError}}</p>
 								</div>
 							</div>
 						</div>
