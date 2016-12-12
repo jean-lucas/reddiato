@@ -3,4 +3,7 @@ angular.module('mainCtrl', [])
 		var self = this;
 
 		this.title = "Reddiato";
+
+		// $('#modal').modal('show');
+
 	});

@@ -3,32 +3,48 @@ angular.module('threadCtrl', [])
         var self = this;
         // set title L
         this.title = "AJDOASOUDASUODASOUDH!";
-
-        // Set voting variable
+        $scope.comments = [{
+                "username": "plukovga",
+                "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
+                score: 1136,
+                hidden: false
+            }, {
+                "username": "usertwo.name",
+                "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
+                score: 745,
+                hidden: true
+            }];
+            // Set voting variable
         self.userVoted = false;
         self.score = 2312;
 
 
-
+        $scope.show = true;
         $("#modal").modal('show');
 
         $scope.upvote = function() {
-            if (self.userVoted == 0){
-              self.score = self.score + 1;
-              self.userVoted = true;
-            }else{
-              self.score = self.score - 1;
-              self.userVoted = false;
+            if (self.userVoted == 0) {
+                self.score = self.score + 1;
+                self.userVoted = true;
+            } else {
+                self.score = self.score - 1;
+                self.userVoted = false;
             }
 
         };
         $scope.downvote = function() {
-            if (self.userVoted == 0){
-              self.score = self.score - 1;
-              self.userVoted = true;
-            }else{
-              self.score = self.score + 1;
-              self.userVoted = false;
+            if (self.userVoted == 0) {
+                self.score = self.score - 1;
+                self.userVoted = true;
+            } else {
+                self.score = self.score + 1;
+                self.userVoted = false;
             }
+        };
+        $scope.minimize = function(index) {
+          $scope.show = !$scope.show;
+
+          $scope.comments[index].hidden = !$scope.comments[index].hidden;
+
         };
     });

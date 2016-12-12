@@ -8,6 +8,7 @@ angular.module('drawerCtrl', [])
     // Create new Tab
     var newTab = $scope.createTab(subreddit);
     $scope.tabs.prepend(newTab);
+    $scope.switchContent(subreddit);
 
     // Close drawer
     $scope.subredditDrawer.trigger('click');
