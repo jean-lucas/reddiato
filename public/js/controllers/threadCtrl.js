@@ -38,7 +38,10 @@ angular.module('threadCtrl', [])
         $scope.commentError = "";
         $scope.newcomment = {
             "username": "",
-            "comment": ""
+            "comment": "",
+            score: 1,
+            timesince: "0 minutes",
+            hidden: false
         };
         // Set voting variable
         self.userVoted = false;
@@ -74,9 +77,18 @@ angular.module('threadCtrl', [])
             $scope.comments[index].hidden = !$scope.comments[index].hidden;
 
         };
-        $scope.submit = function() {
+        $scope.submit = function(user) {
+          // console.log(username);
+          console.log(user)
             if ($scope.newcomment.comment !== "") {
-              
+              $scope.newcomment["username"] = user.username;
+
+              console.log($scope.newcomment)
+              $scope.comments.push(JSON.parse(JSON.stringify($scope.newcomment)));
+              // clear new comment obj
+              // $scope.newcomment["username"] = ;
+              $scope.newcomment["comment"] = "";
+
             } else {
                 $scope.commentError = "Comment cannot be left empty";
             }
