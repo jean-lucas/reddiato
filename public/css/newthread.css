@@ -2,7 +2,13 @@
     margin-top: 15px;
     display: inline;
 }
+.modal-title{
 
+}
+.padd{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .option-title {
     display: inline;
 }
