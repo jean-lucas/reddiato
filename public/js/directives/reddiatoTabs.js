@@ -69,10 +69,10 @@ angular.module('reddiato')
     scope.switchContent = function(tabName) {
       var tabType = tabName.split('/')[1];
       var content_id = '#'+ tabType +'-' + tabName.substring(3);
-      $('body').find('.content').children().fadeOut('slow', function() {
-        $(content_id).fadeIn('slow')
-      });
-
+      $('body').find('.content').children();
+//.fadeOut('slow', function() {
+//   $(content_id).fadeIn('slow')
+// })
     };
 
   };

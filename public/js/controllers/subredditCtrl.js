@@ -32,8 +32,8 @@ angular.module('subredditCtrl', [])
 
 
 
-		$scope.openThread = function(){
-			$('#modal').modal('show');
+		$scope.openNewThread = function(){
+			$('#newThreadModal').modal('show');
 		};
 
 

@@ -24,6 +24,19 @@
 					<div class="row">
 						<div class="col-xs-10 col-xs-offset-1">
 
+							<h3 class="option-title"> Title: </h3>
+							<input type="text" name="title" placeholder="Title">
+						</div>
+						<div class="col-xs-offset-5 col-xs-2">
+							<div class="togglebutton" id="toggleUserContent">
+								<u ng-if="!uCtrl.toggleVal">Post</u>
+								<span ng-if="uCtrl.toggleVal">Post</span> &nbsp;
+								<label>
+									  <input type="checkbox" checked="" ng-click="uCtrl.go()" ng-model="uCtrl.toggleVal"> <span class="toggle"></span>
+								</label> &nbsp;
+								<u ng-if="uCtrl.toggleVal">Comments</u>
+								<span ng-if="!uCtrl.toggleVal">Comments</span>
+							</div>
 						</div>
 					</div>
 				</div>
