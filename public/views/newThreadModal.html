@@ -1,7 +1,7 @@
-<div ng-controller="newThreadController as newThreadCtrl" class="">
+<div ng-controller="newThreadController as ntCtrl" class="">
 
 
-	<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newThreadModal">Open Modal</button> -->
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newThreadModal">Open Modal</button>
 
 	<div id="newThreadModal" class="modal">
 		<div class="modal-dialog">
@@ -9,8 +9,8 @@
 				<!-- modal header -->
 				<div class="modal-header">
 					<div class="row">
-						<div class="col-xs-10">
-							<h4 class="modal-title">Create a New Thread</h4>
+						<div class="col-xs-offset-1 col-xs-10">
+							<h2 class="modal-title">Create a New Thread</h4>
 
 						</div>
 						<div class="col-xs-1">
@@ -22,31 +22,45 @@
 				<!-- modal body -->
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-xs-10 col-xs-offset-1">
+						<div id="title-block"class="col-xs-10 col-xs-offset-1">
 
-							<h3 class="option-title"> Title: </h3>
+							<h4 class="option-title"> Title: </h3>
 							<input type="text" name="title" placeholder="Title">
 						</div>
-						<div class="col-xs-offset-5 col-xs-2">
-							<div class="togglebutton" id="toggleUserContent">
-								<div ng-if="!uCtrl.toggleVal">Post</div>
-								<span ng-if="uCtrl.toggleVal">Post</span> &nbsp;
+					</div>
+					<div class="row">
+						<div class="col-xs-offset-4 col-xs-5">
+							<div class="togglebutton" id="toggleThreadType">
+								<div class="toggle-title"  ng-click="ntCtrl.selected = !ntCtrl.selected" ng-class="{selected: !ntCtrl.selected}">Image</div>
 								<label>
-									  <input type="checkbox" checked="" ng-click="uCtrl.go()" ng-model="uCtrl.toggleVal"> <span class="toggle"></span>
+									  <input type="checkbox" checked="" ng-click="ntCtrl.go()" ng-model="ntCtrl.selected"> <span class="toggle"></span>
 								</label> &nbsp;
-								<div ng-if="uCtrl.toggleVal">Comments</div>
-								<span ng-if="!uCtrl.toggleVal">Comments</span>
+								<div class="toggle-title" ng-click="ntCtrl.selected = !ntCtrl.selected" ng-class="{selected: ntCtrl.selected}">Text</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- Link post -->
+					<div class="row" ng-if="!ntCtrl.selected">
+						<div class="col-xs-offset-1 col-xs-5">
+							<div class="modal-title">Link
+							</div>
+							<input style="display:inline;" type="text" name="link" placeholder="Link">
+
+						</div>
+					</div>
+					<!-- Text post -->
+					<div class="row" ng-if="ntCtrl.selected">
+						<div class="col-xs-offset-1 col-xs-3">
+							<div ng-if="ntCtrl.selected">
+								Text
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- Modal Footer -->
 				<div class="modal-footer">
-					<div class="row">
-						<div class="col-xs-12">
 
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

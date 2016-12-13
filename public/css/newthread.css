@@ -1,0 +1,15 @@
+#title-block {
+    margin-top: 15px;
+    display: inline;
+}
+
+.option-title {
+    display: inline;
+}
+.toggle-title{
+    display: inline;
+    text-align: center;
+}
+.selected{
+  color:red;
+}
