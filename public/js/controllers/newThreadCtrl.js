@@ -2,7 +2,8 @@ angular.module('newThreadCtrl', [])
     .controller('newThreadController', function($scope) {
         var self = this;
         this.toggleVal;
-        $("#newThreadModal").modal('show');
+
+        // $("#newThreadModal").modal('show');
 
     }).filter('filterArray', function($filter) {
         return function(list, arrayFilter) {
