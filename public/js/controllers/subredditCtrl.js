@@ -1,10 +1,10 @@
 angular.module('subredditCtrl', [])
-.controller('subredditController', function($scope) {
+.controller('subredditController', function($scope, $timeout) {
 	var self = this;
 
 	this.currentUserId = 0; // index to allUsers array
 
-	//open a user tab page
+		//open a user tab page
     this.goToUserPage = function(ind) {
 
       if (typeof(ind) == 'string') {
@@ -22,9 +22,13 @@ angular.module('subredditCtrl', [])
       var uName = self.allUsers[self.currentUserId].username;
       console.log("uName: " + uName);
       var newTab = $scope.createTab("/u/"+ uName);
-        $scope.tabs.prepend(newTab);
-        $scope.switchContent("/u/"+ uName);
-    }
+      $scope.tabs.prepend(newTab);
+			$timeout(function() {
+				$scope.switchContent("/u/"+ uName);
+		});
+
+	}
+
 
 
 	$scope.openNewThread = function(){
@@ -33,7 +37,7 @@ angular.module('subredditCtrl', [])
 
 	this.userVoted = false;
 	this.upvote = function($event, index) {
-		if (!$($event.currentTarget).hasClass('down-arrow-select')) {
+    if ($('.down-arrow-select').length === 0 ) {
 			if (!self.userVoted) {
 				self.frontPosts[index]['votes'] ++;
 				self.userVoted = true;
@@ -47,7 +51,8 @@ angular.module('subredditCtrl', [])
 	};
 
 	this.downvote = function($event, index) {
-		if (!$($event.currentTarget).hasClass('up-arrow-select')) {
+
+    if ($('.up-arrow-select').length === 0 ) {
 			if (!self.userVoted) {
 				self.frontPosts[index]['votes'] --;
 				self.userVoted = true;
