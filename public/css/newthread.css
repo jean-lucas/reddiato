@@ -19,3 +19,6 @@
 .selected{
   color:green;
 }
+.border-red{
+  border: 1px solid red;
+}
