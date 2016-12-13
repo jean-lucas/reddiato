@@ -1,7 +1,7 @@
 <div ng-controller="newThreadController as newThreadCtrl" class="">
 
 
-	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newThreadModal">Open Modal</button>
+	<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newThreadModal">Open Modal</button> -->
 
 	<div id="newThreadModal" class="modal">
 		<div class="modal-dialog">
@@ -29,12 +29,12 @@
 						</div>
 						<div class="col-xs-offset-5 col-xs-2">
 							<div class="togglebutton" id="toggleUserContent">
-								<u ng-if="!uCtrl.toggleVal">Post</u>
+								<div ng-if="!uCtrl.toggleVal">Post</div>
 								<span ng-if="uCtrl.toggleVal">Post</span> &nbsp;
 								<label>
 									  <input type="checkbox" checked="" ng-click="uCtrl.go()" ng-model="uCtrl.toggleVal"> <span class="toggle"></span>
 								</label> &nbsp;
-								<u ng-if="uCtrl.toggleVal">Comments</u>
+								<div ng-if="uCtrl.toggleVal">Comments</div>
 								<span ng-if="!uCtrl.toggleVal">Comments</span>
 							</div>
 						</div>
