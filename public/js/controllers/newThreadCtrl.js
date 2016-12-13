@@ -6,7 +6,7 @@ angular.module('newThreadCtrl', [])
             $scope.selected = !$scope.selected;
         }
         $scope.submitThread = function() {
-            console.log($scope.selected);
+
             postup = true;
             // check all items
             postup = postup && $scope.checkValid("title", "");
@@ -39,7 +39,6 @@ angular.module('newThreadCtrl', [])
                     numVotes: 0,
                     numComments: 0
                 });
-                console.log($scope.allUsers[0]);
                 // clear field values
                 $("#title").val("");
                 $("#link").val("");
