@@ -12,7 +12,7 @@
 
 				<div class="card-body thread-body">
 					<div>
-						<span class="user">{{p.user}}</span>
+						<span class="user" ng-click="sCtrl.goToUserPage(p.user)">{{p.user}}</span>
 						<span class="subreddit">&bull; {{p.subreddit}}</span>
 						<span class="time">{{p.timeSincePost}} ago.</span>
 					</div>
@@ -44,7 +44,7 @@
 					</div>
 					<div>
 						<div>
-							<span class="user">{{p.user}}</span>
+							<span class="user" ng-click="sCtrl.goToUserPage(p.user)">{{p.user}}</span>
 							<span class="subreddit">&bull; {{p.subreddit}}</span>
 							<span class="time">{{p.timeSincePost}} ago.</span>
 						</div>
