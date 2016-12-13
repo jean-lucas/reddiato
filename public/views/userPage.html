@@ -5,16 +5,16 @@
 	<!-- user page header -->
 
 	<div id="userPageHeader">
-		<h1> {{sCtrl.allUsers[sCtrl.currentUserId].username}} </h1>
-	
+		<h1> {{allUsers[currentUserId].username}} </h1>
+
 		<!-- user stats -->
 		<div class="userStats">
 			<div class="userStatsWord">
-				Post Karma: {{sCtrl.allUsers[sCtrl.currentUserId].karma}} <br> Member Since : {{sCtrl.allUsers[sCtrl.currentUserId].memberSince | date : "MMMM y"}}
+				Post Karma: {{allUsers[currentUserId].karma}} <br> Member Since : {{allUsers[currentUserId].memberSince | date : "MMMM y"}}
 
-				<div class="userContact" ng-hide="sCtrl.currentUserId == 0">
+				<div class="userContact" ng-hide="currentUserId == 0">
 					<button class="btn btn-raised btn-primary messages" type="button" data-toggle="modal" data-target="#chatModal">
-					Message {{sCtrl.allUsers[sCtrl.currentUserId].username}}
+					Message {{allUsers[currentUserId].username}}
 				</button>
 
 				</div>
@@ -49,7 +49,7 @@
 
 
 			<div ng-show="uCtrl.toggleVal">
-				<div class="panel panel-default" ng-repeat="comment in sCtrl.allUsers[sCtrl.currentUserId].comments |  orderBy: 'date': true">
+				<div class="panel panel-default" ng-repeat="comment in allUsers[currentUserId].comments |  orderBy: 'date': true">
 
 					<div class="panel-body ">
 				    	<h3>  {{comment.text}}  </h3>  <br>
@@ -70,7 +70,7 @@
 
 			<div ng-hide="uCtrl.toggleVal ">
 
-				<div class="panel panel-default " ng-repeat="post in sCtrl.allUsers[sCtrl.currentUserId].posts | orderBy: 'date': true ">
+				<div class="panel panel-default " ng-repeat="post in allUsers[currentUserId].posts | orderBy: 'date': true ">
 
 					<div class="panel-body">
 						<h3>  {{post.title}}  </h3> <br>
