@@ -14,6 +14,9 @@ angular.module('subredditCtrl', [])
 		    $scope.switchContent(self.allUsers[self.currentUserId].username);
 		}
 
+
+
+
 		$scope.openThread = function(){
 			$('#modal').modal('show');
 		};
