@@ -14,9 +14,8 @@
 				Post Karma: {{sCtrl.allUsers[sCtrl.currentUserId].karma}} <br>
 				Member Since : {{sCtrl.allUsers[sCtrl.currentUserId].memberSince | date : "MMMM y"}}
 
-				<div class="userContact" ng-show="{{sCtrl.currentUserId == 0}}">
-				<button class="btn btn-raised btn-primary messages" type="button"  data-toggle="modal" data-target="#chatModal" 
-						>
+				<div class="userContact" ng-hide="sCtrl.currentUserId == 0">
+				<button class="btn btn-raised btn-primary messages" type="button"  data-toggle="modal" data-target="#chatModal">
 					Message {{sCtrl.allUsers[sCtrl.currentUserId].username}}
 				</button>
 				 
@@ -24,8 +23,6 @@
 			</div>
 		</div>
 			
-
-		<!-- user contact -->
 
 		
 
@@ -41,22 +38,60 @@
 	<!-- user page content switch-->
 	<div id="userPageContentWrapper">
 		<div class="togglebutton" id="toggleUserContent">
-		Posts &nbsp;
+		<u ng-if="!uCtrl.toggleVal">Post</u>
+		<span ng-if="uCtrl.toggleVal">Post</span>
+		 &nbsp;
 			<label>
 				  <input type="checkbox" checked="" ng-click="uCtrl.go()" ng-model="uCtrl.toggleVal"> <span class="toggle"></span> 
 			</label>
-		&nbsp;Comments
+		&nbsp;
+		<u ng-if="uCtrl.toggleVal">Comments</u>
+		<span ng-if="!uCtrl.toggleVal">Comments</span>
 		</div>
 
 		<!-- user page content -->
 		<div class="well" id="userPageContent">
 			
 
-			<div ng-show="uCtrl.toggleVal"> Comments </div>
+			<div ng-show="uCtrl.toggleVal"> 
+				<div class="panel panel-default" ng-repeat="comment in sCtrl.allUsers[sCtrl.currentUserId].comments |  orderBy: 'date': true"">
+
+					<div class="panel-body">
+				    	<h3>  {{comment.text}}  </h3>  <br>
+					 	</div>
+					
+
+					<div class="panel-footer" style="text-align:right">
+						Original Post:  <a href=""> {{comment.originalPost }} </a> &nbsp; | &nbsp;  
+						{{comment.date |date : "MMMM y" }}
+					</div>
+				
+				</div>
 
 
+			</div>
+				
 
-			<div ng-hide="uCtrl.toggleVal"> Posts </div>
+
+			<div ng-hide="uCtrl.toggleVal">
+			
+				<div class="panel panel-default" ng-repeat="post in sCtrl.allUsers[sCtrl.currentUserId].posts |  orderBy: 'date': true"  ">
+
+					<div class="panel-body">
+				    	<h3>  {{post.title}}  </h3>  <br>
+				    	<p>  {{post.text | limitTo: 18}} ...</p>
+				 	</div>
+					
+
+					<div class="panel-footer" style="text-align:right">
+						<i class="fa fa-arrow-up" aria-hidden="true"></i> {{post.numVotes }} &nbsp; | &nbsp;  
+						<i class="fa fa-comments" aria-hidden="true"></i> {{post.numComments }} &nbsp; | &nbsp; 
+						{{post.date |date : "MMMM y" }}
+					</div>
+				
+				</div>
+
+			</div>
 
 		</div>
 		
