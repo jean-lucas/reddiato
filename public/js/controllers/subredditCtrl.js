@@ -5,27 +5,26 @@ angular.module('subredditCtrl', [])
 	this.currentUserId = 0; // index to allUsers array
 
 	//open a user tab page
-	this.goToUserPage = function(ind) {
-    console.log("ind : " + ind);
-		if (typeof(ind) == 'string') {
-			for (var i = 0; i < self.allUsers.length; i++) {
-				if (self.allUsers[i].username == ind) {
-					self.currentUserId = i;
-          alert(self.currentUserId);
-					break;
-				}
-			}
-		}
-		else {
-			self.currentUserId = ind;
-		}
+    this.goToUserPage = function(ind) {
 
-		var uName = self.allUsers[self.currentUserId].username;
-    console.log("  uname : " +uName);
-		var newTab = $scope.createTab("/u/"+ uName);
-		$scope.tabs.prepend(newTab);
-		$scope.switchContent("/u/"+ uName);
-	}
+      if (typeof(ind) == 'string') {
+        for (var i = 0; i < self.allUsers.length; i++) {
+          if (self.allUsers[i].username == ind) {
+            self.currentUserId = i;
+            break;
+          }
+        }
+      }
+      else {
+        self.currentUserId = ind;
+      }
+
+      var uName = self.allUsers[self.currentUserId].username;
+      console.log("uName: " + uName);
+      var newTab = $scope.createTab("/u/"+ uName);
+        $scope.tabs.prepend(newTab);
+        $scope.switchContent("/u/"+ uName);
+    }
 
 
 	$scope.openNewThread = function(){
@@ -65,7 +64,7 @@ angular.module('subredditCtrl', [])
 		{
 			name: "Someone isn't to be trusted",
 			img: 'http://i.imgur.com/Rg4zkoN.jpg?1',
-			user: ' GallowBoob',
+			user: 'GallowBoob',
 			subreddit: '/r/aww',
 			timeSincePost: '5 hours',
 			votes: 7223,
@@ -101,7 +100,7 @@ angular.module('subredditCtrl', [])
 		{
 			name: 'This landscape looks like a real life version of a Halo Reach map',
 			img: 'http://i.imgur.com/dWTKNtv.jpg',
-			user: ' dustofoblivion123',
+			user: 'dustofoblivion123',
 			subreddit:'/r/pics',
 			timeSincePost:'1 day',
 			votes:7108,
