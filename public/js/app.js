@@ -30,6 +30,13 @@ angular.module('reddiato', ['ngRoute', 'subredditCtrl', 'drawerCtrl' ,'threadCtr
 	}
 })
 
+.directive('rAskreddit', function() {
+	return {
+		restrict: 'A',
+		templateUrl: '../views/rAskreddit.html'
+	}
+})
+
 .directive('drawerSection', function() {
 	return {
 		restrict: 'A',

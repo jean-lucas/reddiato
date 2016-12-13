@@ -1,1 +1,32 @@
-<p>This is where the pics will go</p>
+<div class="row">
+	<div class="col-lg-2 col-sm-4" ng-repeat="p in sCtrl.frontPicPosts">
+		<div class="card shadow thread-card">
+			<div class="card-content">
+				<div class="card-header thread-header">
+					{{p.name}}
+				</div>
+
+				<div class="card-image" style="max-height: 300px;">
+					<img src={{p.img}} alt="Loading image...">
+				</div>
+
+				<div class="card-body thread-body">
+					<div>
+						<span class="user">{{p.user}}</span>
+						<span class="subreddit">&bull; {{p.subreddit}}</span>
+						<span class="time">{{p.timeSincePost}} ago.</span>
+					</div>
+					<div>
+						<span class="arrows">
+							<i ng-click="upvote()" style="font-size:20px;" class="fa fa-arrow-up up-arrow" aria-hidden="true"></i>
+							<span class="thread-score">{{p.votes}}</span>
+							<i ng-click="downvote()" style="font-size:20px;" class="fa fa-arrow-down down-arrow" aria-hidden="true"></i>
+						</span>
+						<span class="num-comments">{{p.numComments}} comments</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -50,7 +50,7 @@
 
 
 			<div ng-show="uCtrl.toggleVal">
-				<div class="panel panel-default" ng-repeat="comment in sCtrl.allUsers[sCtrl.currentUserId].comments |  orderBy: 'date': true" ">
+				<div class="panel panel-default" ng-repeat="comment in sCtrl.allUsers[sCtrl.currentUserId].comments |  orderBy: 'date': true">
 
 					<div class="panel-body ">
 				    	<h3>  {{comment.text}}  </h3>  <br>
@@ -71,7 +71,7 @@
 
 			<div ng-hide="uCtrl.toggleVal ">
 
-				<div class="panel panel-default " ng-repeat="post in sCtrl.allUsers[sCtrl.currentUserId].posts | orderBy: 'date': true "  ">
+				<div class="panel panel-default " ng-repeat="post in sCtrl.allUsers[sCtrl.currentUserId].posts | orderBy: 'date': true ">
 
 					<div class="panel-body">
 						<h3>  {{post.title}}  </h3> <br>
