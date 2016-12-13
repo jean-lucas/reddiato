@@ -4,32 +4,32 @@ angular.module('threadCtrl', [])
         // set title L
         this.title = "AJDOASOUDASUODASOUDH!";
         $scope.comments = [{
-            "username": "plukovga",
-            "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
+            "username": "Kristin_nostrud",
+            "comment": "On a similar thought, the word 'truth' has lost all meaning. What one holds to be true is now more a matter of belief rather than a matter of fact. Any point that contradicts the story being told is regarded as the truth.",
             score: 1136,
             timesince: "1 day",
             hidden: false
         }, {
-            "username": "usertwo.name",
-            "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
+            "username": "Francesca_fugiat",
+            "comment": "It's because 'News' and 'Entertainment' are no longer separate concepts.",
             score: 745,
             timesince: "22 hours",
             hidden: false
         }, {
-            "username": "usertwo.name",
-            "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
+            "username": "Ladonna_labore",
+            "comment": "Blame the people who pay nothing and expect quality",
             score: 745,
             timesince: "22 hours",
             hidden: false
         }, {
-            "username": "usertwo.name",
-            "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
+            "username": "Emerson_ad",
+            "comment": "Not weird at all... Sensational/dirty journalism has been around for centuries. The fact that people are aware of it now and have more resources to fact check doesn't change that",
             score: 745,
             timesince: "22 hours",
             hidden: false
         }, {
-            "username": "usertwo.name",
-            "comment": "Do you think he got into that job excited about hundreds of strangers probing his rectum, or did he just shrug his shoulders and figure \"eh it\'s a job, beats retail anyways\"Haven't decided which one is funnier to me",
+            "username": "Lydia_adipisicing",
+            "comment": "What really boils my blood is seeing Celebrity Activists bemoan the culture of clickbait and fake news on the Internet, meanwhile all their social media pages have been sold to third party ad agencies that spam nothing but fake news and clickbait. George Takei is probably the worst offender for this.",
             score: 745,
             timesince: "22 hours",
             hidden: false
