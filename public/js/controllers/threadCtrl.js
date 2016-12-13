@@ -49,29 +49,31 @@ angular.module('threadCtrl', [])
         // $("#viewThreadModal").modal('show');
 
         $scope.upvote = function() {
-            if ($('.down-arrow-select').length === 0) {
 
+
+            if ($('.down-arrow-select').length === 0 ) {
+              $("#uparrow").toggleClass("up-arrow-select");
                 if (self.userVoted) {
-                    self.score = self.score + 1;
-                    self.userVoted = true;
-                } else {
                     self.score = self.score - 1;
                     self.userVoted = false;
+                } else {
+                    self.score = self.score + 1;
+                    self.userVoted = true;
                 }
                 // toggle color class
-                $("#uparrow").toggleClass("up-arrow-select");
             }
         };
 
         $scope.downvote = function() {
-            if ($('.up-arrow-select').length === 0) {
 
+            if ($('.up-arrow-select').length === 0) {
+              console.log(self.userVoted);
                 if (self.userVoted) {
-                    self.score = self.score - 1;
-                    self.userVoted = true;
-                } else {
                     self.score = self.score + 1;
                     self.userVoted = false;
+                } else {
+                    self.score = self.score - 1;
+                    self.userVoted = true;
                 }
                 // toggle color class
                 $("#downarrow").toggleClass("down-arrow-select");
