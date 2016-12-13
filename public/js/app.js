@@ -37,6 +37,13 @@ angular.module('reddiato', ['ngRoute', 'subredditCtrl', 'drawerCtrl' ,'threadCtr
 	}
 })
 
+.directive('rMulti', function() {
+	return {
+		restrict: 'A',
+		templateUrl: '../views/rMulti.html'
+	}
+})
+
 .directive('drawerSection', function() {
 	return {
 		restrict: 'A',

@@ -13,7 +13,6 @@
 				<div class="card-body thread-body">
 					<div>
 						<span class="user">{{p.user}}</span>
-						<span class="subreddit">&bull; {{p.subreddit}}</span>
 						<span class="time">{{p.timeSincePost}} ago.</span>
 					</div>
 					<div>
@@ -25,6 +24,37 @@
 						<span class="num-comments">{{p.numComments}} comments</span>
 					</div>
 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="spacer" style="height: 30px;"></div>
+
+<div class="row">
+	<div class="col-lg-6 col-sm-12" ng-repeat="p in sCtrl.frontPosts | limitTo: (6 - sCtrl.frontPosts.length)">
+		<div class="card shadow thread-card">
+			<div class="card-content">
+
+				<div class="card-body thread-body">
+					<div>
+						{{p.name}}
+					</div>
+					<div>
+						<div>
+							<span class="user">{{p.user}}</span>
+							<span class="time">{{p.timeSincePost}} ago.</span>
+						</div>
+						<div>
+							<span class="arrows">
+								<i ng-click="sCtrl.upvote($event, $index+6)" style="font-size:20px;" class="fa fa-arrow-up up-arrow" aria-hidden="true"></i>
+								<span class="thread-score">{{p.votes}}</span>
+								<i ng-click="sCtrl.downvote($event, $index+6)" style="font-size:20px;" class="fa fa-arrow-down down-arrow" aria-hidden="true"></i>
+							</span>
+							<span class="num-comments">{{p.numComments}} comments</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
