@@ -1,4 +1,4 @@
-angular.module('reddiato', ['ngRoute', 'subredditCtrl', 'drawerCtrl' ,'threadCtrl', 'chatCtrl','userPageCtrl'])
+angular.module('reddiato', ['ngRoute', 'subredditCtrl', 'drawerCtrl' ,'threadCtrl','newThreadCtrl', 'chatCtrl','userPageCtrl'])
 
 
 .config(function($routeProvider, $locationProvider){
@@ -42,6 +42,12 @@ angular.module('reddiato', ['ngRoute', 'subredditCtrl', 'drawerCtrl' ,'threadCtr
 	return {
 		restrict: 'A',
 		templateUrl: '../views/viewThreadModal.html'
+	}
+})
+.directive('newThread', function() {
+	return {
+		restrict: 'A',
+		templateUrl: '../views/newThreadModal.html'
 	}
 })
 
