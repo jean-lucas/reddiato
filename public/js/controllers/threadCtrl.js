@@ -1,8 +1,7 @@
 angular.module('threadCtrl', [])
     .controller('threadController', function($scope) {
         var self = this;
-        // set title L
-        this.title = "AJDOASOUDASUODASOUDH!";
+
         $scope.comments = [{
             "username": "Kristin_nostrud",
             "comment": "On a similar thought, the word 'truth' has lost all meaning. What one holds to be true is now more a matter of belief rather than a matter of fact. Any point that contradicts the story being told is regarded as the truth.",

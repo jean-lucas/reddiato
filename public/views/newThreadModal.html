@@ -1,4 +1,4 @@
-<div ng-controller="threadController as threadCtrl" class="">
+<div ng-controller="newThreadController as newThreadCtrl" class="">
 
 
 	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newThreadModal">Open Modal</button>
@@ -6,113 +6,32 @@
 	<div id="newThreadModal" class="modal">
 		<div class="modal-dialog">
 			<div class="modal-content">
+				<!-- modal header -->
 				<div class="modal-header">
 					<div class="row">
-						<!-- Block of code for all arrows and scores hopefully -->
-						<div class="col-xs-1 arrows">
-
-							<i id="uparrow" ng-click="upvote()" style="font-size:20px;" class="fa fa-arrow-up up-arrow" aria-hidden="true"></i>
-
-							<span class="score" ng-model="score">{{threadCtrl.score}}</span>
-
-							<i id="downarrow" ng-click="downvote()" style="font-size:20px;" class="fa fa-arrow-down down-arrow" aria-hidden="true"></i>
-						</div>
-
 						<div class="col-xs-10">
-							<h4 class="modal-title">I freed up some much needed floor space by creating recessed wall shelves for my entertainment center</h4>
+							<h4 class="modal-title">Create a New Thread</h4>
 
 						</div>
 						<div class="col-xs-1">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></button>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-offset-1 col-xs-10">
-							<div class="subtitle">
-								/r/subreddit
-							</div>
-							<div class="subtitle">
-								10 minutes ago
-							</div>
-							<div class="subtitle">
-								1934 comments
-							</div>
-						</div>
-					</div>
 
 				</div>
+				<!-- modal body -->
 				<div class="modal-body">
 					<div class="row">
 						<div class="col-xs-10 col-xs-offset-1">
 
-							<img class="post-image" src="https://placekitten.com/g/450/300">
-							<!--  https://i.redd.it/kjdf6aye662y.jpg -->
 						</div>
 					</div>
-					<br>
-					<!--  -->
-					<div class="comments-container ">
-						<!--  -->
-						<div class="row comments-title">
-							<div class="col-xs-12">
-								<h3>Comments</h3>
-							</div>
-						</div>
-						<!--  -->
-						<div class="row" style="overflow-y: hidden;">
-							<div id="comments" class="col-xs-12 comments">
-								<div class="row comment" ng-repeat="comm in comments track by $index" ng-mousehover="">
-									<div class="col-xs-12">
-										<!-- each comments row/col 12 -->
-										<div class="row">
-											<div class="col-xs-1">
-												<div class="minimize" ng-click="minimize($index)"><span>[-]</span></div>
-											</div>
+				</div>
+				<!-- Modal Footer -->
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-xs-12">
 
-											<div class="col-xs-11">
-												<div class="row">
-													<div class="col-xs-6">
-														<div class="username">{{comm["username"]}}</div>
-														<div class="score">{{comm["score"]}} points {{comm["timesince"]}}</div>
-													</div>
-
-												</div>
-												<!-- What should be hidden  -->
-												<div ng-model="comments[$index]['hidden']" ng-hide="comments[$index]['hidden']">
-													<div class="row">
-														<div class="col-xs-12">
-															{{comm.comment}}
-														</div>
-													</div>
-													<div class="row" ng-hide="comm.hidden">
-														<div class="col-xs-2 option">
-															Reply
-														</div>
-														<div class="col-xs-2 option">
-															Save
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal-footer">
-							<div class="row">
-								<div class="col-xs-11" style="">
-									<textarea style="width:100%; max-width:100%;" ng-model="newcomment.comment" name="comment" rows="4" cols="80" placeholder="Post a comment..."></textarea>
-								</div>
-								<div style="padding-right: 0px;padding-left:0px;" class="col-xs-1">
-									<div class="submit" ng-click="submit(sCtrl.allUsers[sCtrl.currentUserId])">Submit</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-offset-2 col-xs-8" style="text-align:center; color:red;">
-									<p class="comment-error" ng-model="commentError">{{commentError}}</p>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>

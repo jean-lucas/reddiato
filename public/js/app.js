@@ -44,6 +44,7 @@ angular.module('reddiato', ['ngRoute', 'subredditCtrl', 'drawerCtrl' ,'threadCtr
 		templateUrl: '../views/viewThreadModal.html'
 	}
 })
+
 .directive('newThread', function() {
 	return {
 		restrict: 'A',

@@ -1,5 +1,5 @@
-angular.module('threadCtrl', [])
-    .controller('threadController', function($scope) {
+angular.module('newThreadCtrl', [])
+    .controller('newThreadController', function($scope) {
         var self = this;
-      
+
     });
