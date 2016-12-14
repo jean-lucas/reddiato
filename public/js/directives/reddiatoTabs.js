@@ -295,7 +295,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "do adipisicing eiusmod",
-            "type": "undefined",
+            "type": "text", // text or link
             "text": "labore Lorem cupidatat eu proident elit aliqua voluptate velit fugiat magna est ut eu",
             "date": "2014-10-22T09:14:02",
             "numVotes": 870,
@@ -303,7 +303,7 @@ angular.module('reddiato')
           },
           {
             "title": "laborum mollit amet",
-            "type": "undefined",
+            "type": "text",
             "text": "magna nisi consectetur aliqua dolore qui ex officia veniam in proident et eiusmod dolore ut eiusmod",
             "date": "2016-07-26T05:28:01",
             "numVotes": 366,
@@ -311,7 +311,7 @@ angular.module('reddiato')
           },
           {
             "title": "aliquip mollit Lorem deserunt ipsum",
-            "type": "undefined",
+            "type": "text",
             "text": "cillum nisi esse officia aliquip commodo laboris esse et et sint nulla elit id anim in",
             "date": "2016-02-23T07:37:09",
             "numVotes": 861,
@@ -319,7 +319,7 @@ angular.module('reddiato')
           },
           {
             "title": "minim qui ex in",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt quis anim ut pariatur ex cupidatat tempor cupidatat",
             "date": "2016-10-05T02:31:14",
             "numVotes": 126,
@@ -352,7 +352,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "sint non duis",
-            "type": "undefined",
+            "type": "text",
             "text": "labore ad ipsum laborum enim nostrud proident nisi minim consectetur duis irure ea non eiusmod commodo elit",
             "date": "2014-01-14T08:45:18",
             "numVotes": 988,
@@ -360,7 +360,7 @@ angular.module('reddiato')
           },
           {
             "title": "duis labore irure",
-            "type": "undefined",
+            "type": "text",
             "text": "minim esse duis ex nulla nostrud sit eiusmod dolore culpa consectetur commodo",
             "date": "2014-06-07T01:24:12",
             "numVotes": 444,
@@ -368,7 +368,7 @@ angular.module('reddiato')
           },
           {
             "title": "ullamco nostrud mollit reprehenderit",
-            "type": "undefined",
+            "type": "text",
             "text": "aliquip proident labore sit adipisicing do ipsum consequat ea id mollit ipsum qui cillum do Lorem esse",
             "date": "2014-05-20T10:22:21",
             "numVotes": 855,
@@ -431,7 +431,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "eiusmod consequat laborum",
-            "type": "undefined",
+            "type": "text",
             "text": "mollit magna in proident incididunt non et reprehenderit tempor do",
             "date": "2014-12-11T08:02:42",
             "numVotes": 771,
@@ -439,7 +439,7 @@ angular.module('reddiato')
           },
           {
             "title": "et nostrud excepteur occaecat sit",
-            "type": "undefined",
+            "type": "text",
             "text": "ex magna fugiat pariatur laboris laboris",
             "date": "2014-12-26T08:57:21",
             "numVotes": 454,
@@ -447,7 +447,7 @@ angular.module('reddiato')
           },
           {
             "title": "irure commodo anim",
-            "type": "undefined",
+            "type": "text",
             "text": "laboris excepteur veniam laborum qui cillum tempor aliquip non est labore officia aliquip aliquip",
             "date": "2015-08-15T09:43:51",
             "numVotes": 980,
@@ -455,7 +455,7 @@ angular.module('reddiato')
           },
           {
             "title": "id quis mollit velit",
-            "type": "undefined",
+            "type": "text",
             "text": "elit eiusmod minim ullamco sint ipsum minim dolor esse cupidatat sint dolor eu minim Lorem",
             "date": "2015-01-01T07:37:22",
             "numVotes": 268,
@@ -511,7 +511,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "ullamco officia laborum enim",
-            "type": "undefined",
+            "type": "text",
             "text": "elit tempor sunt nulla tempor nisi",
             "date": "2015-11-12T08:26:13",
             "numVotes": 991,
@@ -527,7 +527,7 @@ angular.module('reddiato')
           },
           {
             "title": "enim sint ut",
-            "type": "undefined",
+            "type": "text",
             "text": "veniam ullamco consequat pariatur ut",
             "date": "2015-02-07T06:34:08",
             "numVotes": 658,
@@ -535,7 +535,7 @@ angular.module('reddiato')
           },
           {
             "title": "proident adipisicing aliquip est cupidatat",
-            "type": "undefined",
+            "type": "text",
             "text": "veniam id nisi labore dolor voluptate incididunt anim voluptate tempor eiusmod non exercitation elit et ex",
             "date": "2016-04-04T08:41:14",
             "numVotes": 731,
@@ -543,7 +543,7 @@ angular.module('reddiato')
           },
           {
             "title": "ea excepteur eiusmod sit ad",
-            "type": "undefined",
+            "type": "text",
             "text": "mollit ad cillum voluptate cupidatat elit ut in ullamco",
             "date": "2015-01-03T03:17:12",
             "numVotes": 315,
@@ -551,7 +551,7 @@ angular.module('reddiato')
           },
           {
             "title": "duis laborum cillum ad",
-            "type": "undefined",
+            "type": "text",
             "text": "Lorem voluptate quis commodo enim minim non laborum pariatur non fugiat quis",
             "date": "2014-12-24T08:23:20",
             "numVotes": 687,
@@ -559,7 +559,7 @@ angular.module('reddiato')
           },
           {
             "title": "occaecat aliquip velit ex",
-            "type": "undefined",
+            "type": "text",
             "text": "ullamco consequat mollit aliqua quis officia proident laboris fugiat minim officia nostrud laboris elit laboris ipsum Lorem",
             "date": "2016-11-26T07:09:17",
             "numVotes": 367,
@@ -627,7 +627,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "amet anim ex ut",
-            "type": "undefined",
+            "type": "text",
             "text": "proident ad et anim ad ipsum non anim sint ad ad irure aliquip nulla nostrud dolor aliquip",
             "date": "2015-05-13T07:03:02",
             "numVotes": 585,
@@ -635,7 +635,7 @@ angular.module('reddiato')
           },
           {
             "title": "ex non sint ad",
-            "type": "undefined",
+            "type": "text",
             "text": "nostrud mollit in dolore proident excepteur veniam",
             "date": "2016-01-23T03:38:07",
             "numVotes": 141,
@@ -643,7 +643,7 @@ angular.module('reddiato')
           },
           {
             "title": "officia incididunt dolor est",
-            "type": "undefined",
+            "type": "text",
             "text": "occaecat aute anim ullamco est eu mollit dolore non voluptate in occaecat commodo Lorem aute voluptate nisi",
             "date": "2014-07-20T09:30:39",
             "numVotes": 701,
@@ -651,7 +651,7 @@ angular.module('reddiato')
           },
           {
             "title": "duis non consectetur consectetur dolor",
-            "type": "undefined",
+            "type": "text",
             "text": "fugiat deserunt eu dolor ut quis aliqua anim dolor reprehenderit dolor aliqua proident esse consectetur non",
             "date": "2016-08-16T09:27:28",
             "numVotes": 173,
@@ -719,7 +719,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "exercitation tempor do est cillum",
-            "type": "undefined",
+            "type": "text",
             "text": "anim nulla ullamco laborum cillum ut qui proident aute proident",
             "date": "2015-11-20T05:24:41",
             "numVotes": 327,
@@ -727,7 +727,7 @@ angular.module('reddiato')
           },
           {
             "title": "eu eiusmod velit Lorem et",
-            "type": "undefined",
+            "type": "text",
             "text": "cupidatat veniam ex quis non dolor et",
             "date": "2015-03-14T04:44:05",
             "numVotes": 435,
@@ -735,7 +735,7 @@ angular.module('reddiato')
           },
           {
             "title": "excepteur reprehenderit amet nisi commodo",
-            "type": "undefined",
+            "type": "text",
             "text": "aliquip laboris Lorem eiusmod pariatur elit elit sint reprehenderit proident pariatur magna commodo magna",
             "date": "2014-07-21T05:27:15",
             "numVotes": 604,
@@ -743,7 +743,7 @@ angular.module('reddiato')
           },
           {
             "title": "ipsum sint magna deserunt",
-            "type": "undefined",
+            "type": "text",
             "text": "occaecat sunt ullamco labore consectetur irure cillum dolor eiusmod incididunt mollit anim sint in deserunt esse",
             "date": "2015-12-03T05:19:10",
             "numVotes": 219,
@@ -751,7 +751,7 @@ angular.module('reddiato')
           },
           {
             "title": "do adipisicing dolore aliquip tempor",
-            "type": "undefined",
+            "type": "text",
             "text": "pariatur laborum sunt est commodo anim officia duis voluptate deserunt ea do deserunt nulla sunt",
             "date": "2016-07-09T01:42:08",
             "numVotes": 233,
@@ -759,7 +759,7 @@ angular.module('reddiato')
           },
           {
             "title": "pariatur adipisicing ullamco incididunt",
-            "type": "undefined",
+            "type": "text",
             "text": "ea voluptate anim incididunt ex minim amet",
             "date": "2015-01-02T08:33:29",
             "numVotes": 571,
@@ -767,7 +767,7 @@ angular.module('reddiato')
           },
           {
             "title": "ullamco dolore et ipsum",
-            "type": "undefined",
+            "type": "text",
             "text": "cupidatat labore aute id enim veniam ex dolor enim et cupidatat in elit tempor id non",
             "date": "2014-01-27T02:31:01",
             "numVotes": 280,
@@ -775,7 +775,7 @@ angular.module('reddiato')
           },
           {
             "title": "non reprehenderit reprehenderit minim",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt veniam ullamco pariatur laborum occaecat cupidatat non occaecat consequat nostrud magna elit amet aute ea",
             "date": "2016-11-21T06:21:46",
             "numVotes": 457,
@@ -783,7 +783,7 @@ angular.module('reddiato')
           },
           {
             "title": "magna aliquip nulla elit",
-            "type": "undefined",
+            "type": "text",
             "text": "consequat velit adipisicing ex dolor ea laboris sunt",
             "date": "2016-01-22T09:01:43",
             "numVotes": 239,
@@ -791,7 +791,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur magna voluptate",
-            "type": "undefined",
+            "type": "text",
             "text": "nostrud dolor sit laboris mollit est enim adipisicing",
             "date": "2014-01-15T10:55:44",
             "numVotes": 514,
@@ -799,7 +799,7 @@ angular.module('reddiato')
           },
           {
             "title": "culpa magna duis",
-            "type": "undefined",
+            "type": "text",
             "text": "voluptate esse velit excepteur amet",
             "date": "2015-03-23T02:09:54",
             "numVotes": 622,
@@ -807,7 +807,7 @@ angular.module('reddiato')
           },
           {
             "title": "esse officia adipisicing consequat et",
-            "type": "undefined",
+            "type": "text",
             "text": "dolor in qui officia veniam",
             "date": "2014-05-17T10:38:29",
             "numVotes": 536,
@@ -850,7 +850,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "consectetur Lorem ea ad",
-            "type": "undefined",
+            "type": "text",
             "text": "sint Lorem labore dolor quis ipsum deserunt officia",
             "date": "2015-08-24T08:46:37",
             "numVotes": 379,
@@ -858,7 +858,7 @@ angular.module('reddiato')
           },
           {
             "title": "non veniam amet amet laboris",
-            "type": "undefined",
+            "type": "text",
             "text": "consectetur aliquip ea culpa est est ut dolor exercitation consectetur",
             "date": "2014-09-23T11:17:18",
             "numVotes": 712,
@@ -866,7 +866,7 @@ angular.module('reddiato')
           },
           {
             "title": "aliquip id excepteur",
-            "type": "undefined",
+            "type": "text",
             "text": "cillum amet esse id ullamco",
             "date": "2015-10-09T07:00:32",
             "numVotes": 102,
@@ -874,7 +874,7 @@ angular.module('reddiato')
           },
           {
             "title": "consequat velit occaecat occaecat",
-            "type": "undefined",
+            "type": "text",
             "text": "nisi minim esse enim culpa aliquip ipsum non deserunt velit nisi ad anim dolore velit eu culpa",
             "date": "2015-05-14T12:30:00",
             "numVotes": 183,
@@ -882,7 +882,7 @@ angular.module('reddiato')
           },
           {
             "title": "officia sunt dolore adipisicing",
-            "type": "undefined",
+            "type": "text",
             "text": "aliquip nisi labore adipisicing commodo est exercitation excepteur adipisicing magna Lorem sint dolor dolor exercitation",
             "date": "2014-03-10T06:09:50",
             "numVotes": 116,
@@ -890,7 +890,7 @@ angular.module('reddiato')
           },
           {
             "title": "et esse tempor",
-            "type": "undefined",
+            "type": "text",
             "text": "mollit laboris sint fugiat qui est duis enim commodo enim aliquip tempor eiusmod minim aliquip commodo fugiat",
             "date": "2016-08-09T05:51:04",
             "numVotes": 132,
@@ -898,7 +898,7 @@ angular.module('reddiato')
           },
           {
             "title": "laborum ut aute",
-            "type": "undefined",
+            "type": "text",
             "text": "eu officia aliquip eu eu",
             "date": "2016-05-09T09:18:54",
             "numVotes": 765,
@@ -906,7 +906,7 @@ angular.module('reddiato')
           },
           {
             "title": "tempor quis magna do dolore",
-            "type": "undefined",
+            "type": "text",
             "text": "minim laboris eiusmod consectetur veniam ex ullamco aute sint consectetur nisi elit velit",
             "date": "2016-06-24T07:35:55",
             "numVotes": 462,
@@ -914,7 +914,7 @@ angular.module('reddiato')
           },
           {
             "title": "aliquip aliqua dolor Lorem et",
-            "type": "undefined",
+            "type": "text",
             "text": "nisi ex quis labore cupidatat sit incididunt eiusmod ut id ad exercitation aute ea voluptate",
             "date": "2016-12-05T03:23:20",
             "numVotes": 730,
@@ -922,7 +922,7 @@ angular.module('reddiato')
           },
           {
             "title": "ullamco labore fugiat ullamco",
-            "type": "undefined",
+            "type": "text",
             "text": "in irure qui nulla dolor fugiat excepteur nisi culpa excepteur quis non pariatur",
             "date": "2015-12-11T12:20:25",
             "numVotes": 563,
@@ -1000,7 +1000,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "cillum commodo veniam laboris",
-            "type": "undefined",
+            "type": "text",
             "text": "ex ullamco esse esse labore ex nisi sint anim officia",
             "date": "2016-08-01T10:23:29",
             "numVotes": 980,
@@ -1008,7 +1008,7 @@ angular.module('reddiato')
           },
           {
             "title": "Lorem exercitation consequat",
-            "type": "undefined",
+            "type": "text",
             "text": "laborum ea sint sint voluptate enim Lorem officia voluptate ut sint tempor nostrud laboris excepteur",
             "date": "2016-01-19T03:56:15",
             "numVotes": 623,
@@ -1016,7 +1016,7 @@ angular.module('reddiato')
           },
           {
             "title": "voluptate nisi id",
-            "type": "undefined",
+            "type": "text",
             "text": "aliqua Lorem labore aliquip reprehenderit ad fugiat enim qui",
             "date": "2015-06-09T06:27:21",
             "numVotes": 493,
@@ -1024,7 +1024,7 @@ angular.module('reddiato')
           },
           {
             "title": "fugiat pariatur ut qui voluptate",
-            "type": "undefined",
+            "type": "text",
             "text": "est nisi in sit culpa laboris voluptate enim cillum velit ut irure eiusmod ullamco",
             "date": "2014-04-04T09:24:58",
             "numVotes": 526,
@@ -1032,7 +1032,7 @@ angular.module('reddiato')
           },
           {
             "title": "nisi et officia",
-            "type": "undefined",
+            "type": "text",
             "text": "sint velit nulla quis id reprehenderit ea elit excepteur dolor minim laborum voluptate",
             "date": "2014-10-18T09:29:05",
             "numVotes": 190,
@@ -1040,7 +1040,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur elit incididunt",
-            "type": "undefined",
+            "type": "text",
             "text": "irure sint esse tempor deserunt non consequat minim et",
             "date": "2016-03-07T04:27:24",
             "numVotes": 610,
@@ -1108,7 +1108,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "laborum do aliqua officia sunt",
-            "type": "undefined",
+            "type": "text",
             "text": "amet labore deserunt sint cupidatat culpa anim sunt pariatur ea Lorem cupidatat officia esse ullamco",
             "date": "2015-09-24T11:26:03",
             "numVotes": 923,
@@ -1116,7 +1116,7 @@ angular.module('reddiato')
           },
           {
             "title": "id excepteur commodo occaecat ex",
-            "type": "undefined",
+            "type": "text",
             "text": "eu quis magna ut cupidatat do qui nisi eu ut deserunt",
             "date": "2014-10-01T08:26:47",
             "numVotes": 343,
@@ -1124,7 +1124,7 @@ angular.module('reddiato')
           },
           {
             "title": "eiusmod excepteur irure cupidatat enim",
-            "type": "undefined",
+            "type": "text",
             "text": "pariatur laboris quis et fugiat",
             "date": "2016-01-27T01:49:24",
             "numVotes": 953,
@@ -1132,7 +1132,7 @@ angular.module('reddiato')
           },
           {
             "title": "adipisicing consequat et in",
-            "type": "undefined",
+            "type": "text",
             "text": "ad dolore pariatur officia voluptate pariatur ut incididunt",
             "date": "2014-09-29T02:06:56",
             "numVotes": 742,
@@ -1140,7 +1140,7 @@ angular.module('reddiato')
           },
           {
             "title": "proident sit ullamco eiusmod ad",
-            "type": "undefined",
+            "type": "text",
             "text": "elit quis Lorem voluptate dolore consequat veniam qui",
             "date": "2016-03-26T03:57:14",
             "numVotes": 760,
@@ -1156,7 +1156,7 @@ angular.module('reddiato')
           },
           {
             "title": "nisi nulla ipsum",
-            "type": "undefined",
+            "type": "text",
             "text": "voluptate eiusmod non culpa quis aliqua laborum ex magna veniam ad est proident",
             "date": "2016-11-06T06:56:37",
             "numVotes": 837,
@@ -1209,7 +1209,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "sint laborum nostrud culpa commodo",
-            "type": "undefined",
+            "type": "text",
             "text": "proident nulla sint labore Lorem amet sit excepteur excepteur deserunt non id aliquip ut",
             "date": "2016-11-29T04:37:34",
             "numVotes": 671,
@@ -1217,7 +1217,7 @@ angular.module('reddiato')
           },
           {
             "title": "labore cillum irure id",
-            "type": "undefined",
+            "type": "text",
             "text": "voluptate consequat enim ex est aute voluptate adipisicing velit",
             "date": "2016-07-18T05:55:33",
             "numVotes": 595,
@@ -1225,7 +1225,7 @@ angular.module('reddiato')
           },
           {
             "title": "ullamco elit irure voluptate ut",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt adipisicing labore adipisicing nisi ex enim veniam eu officia mollit eiusmod reprehenderit culpa",
             "date": "2015-06-25T01:51:51",
             "numVotes": 544,
@@ -1233,7 +1233,7 @@ angular.module('reddiato')
           },
           {
             "title": "cupidatat veniam ut id",
-            "type": "undefined",
+            "type": "text",
             "text": "deserunt officia amet consequat dolore ipsum adipisicing est occaecat eiusmod quis esse nisi",
             "date": "2014-04-13T01:22:58",
             "numVotes": 535,
@@ -1241,7 +1241,7 @@ angular.module('reddiato')
           },
           {
             "title": "enim ex amet",
-            "type": "undefined",
+            "type": "text",
             "text": "culpa eu deserunt culpa irure irure id laboris",
             "date": "2014-06-05T03:58:20",
             "numVotes": 597,
@@ -1249,7 +1249,7 @@ angular.module('reddiato')
           },
           {
             "title": "excepteur enim exercitation",
-            "type": "undefined",
+            "type": "text",
             "text": "in enim reprehenderit nisi qui ex voluptate qui ad",
             "date": "2014-07-15T12:06:53",
             "numVotes": 157,
@@ -1257,7 +1257,7 @@ angular.module('reddiato')
           },
           {
             "title": "aliquip quis nisi labore deserunt",
-            "type": "undefined",
+            "type": "text",
             "text": "et et quis mollit nisi pariatur commodo Lorem esse laboris cupidatat deserunt",
             "date": "2016-05-18T03:02:02",
             "numVotes": 494,
@@ -1265,7 +1265,7 @@ angular.module('reddiato')
           },
           {
             "title": "labore eiusmod ad quis laborum",
-            "type": "undefined",
+            "type": "text",
             "text": "minim commodo reprehenderit occaecat consequat",
             "date": "2014-10-13T02:14:55",
             "numVotes": 914,
@@ -1273,7 +1273,7 @@ angular.module('reddiato')
           },
           {
             "title": "ex veniam proident",
-            "type": "undefined",
+            "type": "text",
             "text": "minim est deserunt ipsum enim laboris tempor ad consequat mollit eu ad",
             "date": "2015-07-11T04:19:41",
             "numVotes": 553,
@@ -1281,7 +1281,7 @@ angular.module('reddiato')
           },
           {
             "title": "velit proident pariatur",
-            "type": "undefined",
+            "type": "text",
             "text": "amet reprehenderit cupidatat magna officia cillum nisi",
             "date": "2015-08-04T05:18:36",
             "numVotes": 960,
@@ -1289,7 +1289,7 @@ angular.module('reddiato')
           },
           {
             "title": "est mollit reprehenderit enim proident",
-            "type": "undefined",
+            "type": "text",
             "text": "sit eiusmod pariatur deserunt quis dolore excepteur ex sit sunt aliqua excepteur pariatur veniam labore",
             "date": "2015-10-30T07:21:44",
             "numVotes": 236,
@@ -1297,7 +1297,7 @@ angular.module('reddiato')
           },
           {
             "title": "in aute commodo consectetur",
-            "type": "undefined",
+            "type": "text",
             "text": "pariatur nulla non ipsum ut dolor id nisi nisi",
             "date": "2016-12-02T11:01:41",
             "numVotes": 367,
@@ -1355,7 +1355,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "elit culpa pariatur ut",
-            "type": "undefined",
+            "type": "text",
             "text": "ea tempor magna dolor adipisicing laboris",
             "date": "2014-07-04T01:32:54",
             "numVotes": 365,
@@ -1371,7 +1371,7 @@ angular.module('reddiato')
           },
           {
             "title": "proident commodo incididunt nulla ad",
-            "type": "undefined",
+            "type": "text",
             "text": "duis labore anim dolore magna nulla",
             "date": "2016-01-27T11:58:00",
             "numVotes": 715,
@@ -1379,7 +1379,7 @@ angular.module('reddiato')
           },
           {
             "title": "cillum voluptate exercitation",
-            "type": "undefined",
+            "type": "text",
             "text": "occaecat incididunt est veniam voluptate sint aute magna veniam laboris",
             "date": "2016-04-14T10:56:24",
             "numVotes": 957,
@@ -1387,7 +1387,7 @@ angular.module('reddiato')
           },
           {
             "title": "minim laborum dolore duis",
-            "type": "undefined",
+            "type": "text",
             "text": "sint nisi nostrud eu et commodo culpa irure excepteur nulla occaecat voluptate nisi aliquip minim dolore irure",
             "date": "2014-06-26T04:03:48",
             "numVotes": 267,
@@ -1395,7 +1395,7 @@ angular.module('reddiato')
           },
           {
             "title": "labore adipisicing anim dolor laborum",
-            "type": "undefined",
+            "type": "text",
             "text": "minim voluptate ea id est laborum in proident et",
             "date": "2016-01-23T03:13:31",
             "numVotes": 893,
@@ -1403,7 +1403,7 @@ angular.module('reddiato')
           },
           {
             "title": "aute irure labore culpa",
-            "type": "undefined",
+            "type": "text",
             "text": "cillum incididunt magna reprehenderit pariatur et laborum eu consectetur exercitation exercitation eu mollit nulla",
             "date": "2014-09-06T01:25:22",
             "numVotes": 402,
@@ -1411,7 +1411,7 @@ angular.module('reddiato')
           },
           {
             "title": "minim aute pariatur sunt ex",
-            "type": "undefined",
+            "type": "text",
             "text": "in cillum duis fugiat labore incididunt pariatur ex",
             "date": "2016-06-15T06:39:29",
             "numVotes": 449,
@@ -1419,7 +1419,7 @@ angular.module('reddiato')
           },
           {
             "title": "consequat esse sunt aliqua veniam",
-            "type": "undefined",
+            "type": "text",
             "text": "elit tempor officia tempor duis id nostrud in ullamco proident ut",
             "date": "2015-07-01T04:06:54",
             "numVotes": 714,
@@ -1427,7 +1427,7 @@ angular.module('reddiato')
           },
           {
             "title": "eu fugiat exercitation",
-            "type": "undefined",
+            "type": "text",
             "text": "minim elit adipisicing pariatur et qui pariatur reprehenderit eu qui ipsum ipsum velit sint ex deserunt consectetur",
             "date": "2015-05-20T12:21:23",
             "numVotes": 663,
@@ -1435,7 +1435,7 @@ angular.module('reddiato')
           },
           {
             "title": "veniam incididunt non",
-            "type": "undefined",
+            "type": "text",
             "text": "officia consequat consectetur fugiat in consequat veniam aliqua labore ipsum veniam cillum ex adipisicing",
             "date": "2016-10-08T03:03:06",
             "numVotes": 715,
@@ -1443,7 +1443,7 @@ angular.module('reddiato')
           },
           {
             "title": "ipsum officia enim",
-            "type": "undefined",
+            "type": "text",
             "text": "occaecat aliqua est occaecat magna esse voluptate minim deserunt esse occaecat qui nostrud",
             "date": "2015-09-21T11:02:37",
             "numVotes": 324,
@@ -1514,7 +1514,7 @@ angular.module('reddiato')
           },
           {
             "title": "magna ea quis",
-            "type": "undefined",
+            "type": "text",
             "text": "enim Lorem ipsum aute excepteur",
             "date": "2014-05-21T05:46:09",
             "numVotes": 120,
@@ -1522,7 +1522,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur duis laboris qui sint",
-            "type": "undefined",
+            "type": "text",
             "text": "anim laboris pariatur cillum eiusmod est elit dolore eiusmod culpa deserunt excepteur sunt ipsum consectetur",
             "date": "2015-08-10T08:55:33",
             "numVotes": 360,
@@ -1530,7 +1530,7 @@ angular.module('reddiato')
           },
           {
             "title": "id Lorem et dolor Lorem",
-            "type": "undefined",
+            "type": "text",
             "text": "quis reprehenderit non excepteur laboris deserunt sunt anim consectetur laborum exercitation in veniam",
             "date": "2014-08-22T08:18:33",
             "numVotes": 277,
@@ -1538,7 +1538,7 @@ angular.module('reddiato')
           },
           {
             "title": "enim sunt reprehenderit irure",
-            "type": "undefined",
+            "type": "text",
             "text": "exercitation cupidatat duis commodo ex enim laborum tempor ipsum ut anim sit cupidatat officia mollit et minim",
             "date": "2014-03-07T11:22:39",
             "numVotes": 196,
@@ -1554,7 +1554,7 @@ angular.module('reddiato')
           },
           {
             "title": "id fugiat anim excepteur",
-            "type": "undefined",
+            "type": "text",
             "text": "quis ex reprehenderit cillum qui veniam laboris tempor sit",
             "date": "2014-10-07T10:51:57",
             "numVotes": 854,
@@ -1562,7 +1562,7 @@ angular.module('reddiato')
           },
           {
             "title": "sunt fugiat in amet",
-            "type": "undefined",
+            "type": "text",
             "text": "dolor aliquip in exercitation aliqua sint",
             "date": "2015-11-22T06:53:23",
             "numVotes": 636,
@@ -1570,7 +1570,7 @@ angular.module('reddiato')
           },
           {
             "title": "sunt cillum enim",
-            "type": "undefined",
+            "type": "text",
             "text": "ea exercitation qui duis aute mollit eu velit magna minim aliqua deserunt commodo amet anim",
             "date": "2015-07-05T10:38:43",
             "numVotes": 534,
@@ -1578,7 +1578,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur nisi officia amet eiusmod",
-            "type": "undefined",
+            "type": "text",
             "text": "proident reprehenderit esse duis nulla excepteur voluptate do excepteur non ea eu magna aliquip dolor",
             "date": "2015-01-18T12:12:45",
             "numVotes": 160,
@@ -1611,7 +1611,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "dolore id consequat aliquip",
-            "type": "undefined",
+            "type": "text",
             "text": "ullamco mollit excepteur et enim id ut ut consectetur adipisicing veniam aliqua laboris",
             "date": "2016-06-07T02:09:34",
             "numVotes": 141,
@@ -1619,7 +1619,7 @@ angular.module('reddiato')
           },
           {
             "title": "minim reprehenderit laboris anim",
-            "type": "undefined",
+            "type": "text",
             "text": "laboris quis sunt commodo in",
             "date": "2014-11-10T08:02:09",
             "numVotes": 340,
@@ -1627,7 +1627,7 @@ angular.module('reddiato')
           },
           {
             "title": "incididunt fugiat esse veniam laboris",
-            "type": "undefined",
+            "type": "text",
             "text": "tempor ea mollit deserunt ea ut nulla irure veniam exercitation cupidatat dolor",
             "date": "2015-07-26T08:52:27",
             "numVotes": 795,
@@ -1635,7 +1635,7 @@ angular.module('reddiato')
           },
           {
             "title": "sint irure ipsum ex qui",
-            "type": "undefined",
+            "type": "text",
             "text": "laborum cillum ipsum est veniam veniam nostrud minim veniam nostrud laboris fugiat reprehenderit minim laboris",
             "date": "2016-02-10T12:59:18",
             "numVotes": 503,
@@ -1643,7 +1643,7 @@ angular.module('reddiato')
           },
           {
             "title": "laboris voluptate excepteur",
-            "type": "undefined",
+            "type": "text",
             "text": "quis sunt cillum eiusmod duis laboris ullamco quis sit est",
             "date": "2014-10-18T05:01:57",
             "numVotes": 287,
@@ -1651,7 +1651,7 @@ angular.module('reddiato')
           },
           {
             "title": "culpa tempor incididunt sunt sint",
-            "type": "undefined",
+            "type": "text",
             "text": "ad laborum Lorem voluptate pariatur est esse reprehenderit ex",
             "date": "2014-10-07T12:59:03",
             "numVotes": 998,
@@ -1689,7 +1689,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "elit fugiat enim dolor esse",
-            "type": "undefined",
+            "type": "text",
             "text": "esse incididunt sint ipsum eiusmod",
             "date": "2014-02-24T03:52:26",
             "numVotes": 879,
@@ -1697,7 +1697,7 @@ angular.module('reddiato')
           },
           {
             "title": "pariatur anim sunt sunt qui",
-            "type": "undefined",
+            "type": "text",
             "text": "proident tempor esse non enim cupidatat do aute",
             "date": "2016-10-03T02:26:39",
             "numVotes": 695,
@@ -1705,7 +1705,7 @@ angular.module('reddiato')
           },
           {
             "title": "ad in quis in",
-            "type": "undefined",
+            "type": "text",
             "text": "aliquip sunt nulla magna fugiat irure exercitation consectetur qui consequat dolor est",
             "date": "2015-08-04T10:17:11",
             "numVotes": 534,
@@ -1713,7 +1713,7 @@ angular.module('reddiato')
           },
           {
             "title": "enim qui esse",
-            "type": "undefined",
+            "type": "text",
             "text": "ex voluptate et eiusmod ullamco mollit in id",
             "date": "2016-04-14T02:33:34",
             "numVotes": 478,
@@ -1721,7 +1721,7 @@ angular.module('reddiato')
           },
           {
             "title": "anim fugiat mollit",
-            "type": "undefined",
+            "type": "text",
             "text": "ullamco pariatur do quis nisi est officia mollit voluptate consequat cillum",
             "date": "2015-12-27T10:58:54",
             "numVotes": 938,
@@ -1729,7 +1729,7 @@ angular.module('reddiato')
           },
           {
             "title": "adipisicing irure reprehenderit",
-            "type": "undefined",
+            "type": "text",
             "text": "consequat minim officia id nisi incididunt reprehenderit sit aliquip",
             "date": "2015-03-16T02:34:25",
             "numVotes": 510,
@@ -1800,7 +1800,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "ex occaecat commodo aliquip culpa",
-            "type": "undefined",
+            "type": "text",
             "text": "eiusmod exercitation dolor sit ea consequat amet do labore",
             "date": "2015-03-16T05:09:58",
             "numVotes": 637,
@@ -1808,7 +1808,7 @@ angular.module('reddiato')
           },
           {
             "title": "voluptate velit excepteur duis",
-            "type": "undefined",
+            "type": "text",
             "text": "sit elit fugiat cupidatat et pariatur dolore pariatur est anim dolor dolor",
             "date": "2016-05-16T07:13:14",
             "numVotes": 922,
@@ -1816,7 +1816,7 @@ angular.module('reddiato')
           },
           {
             "title": "est culpa est",
-            "type": "undefined",
+            "type": "text",
             "text": "non veniam fugiat adipisicing in velit ullamco sunt ut",
             "date": "2016-04-27T04:43:31",
             "numVotes": 690,
@@ -1824,7 +1824,7 @@ angular.module('reddiato')
           },
           {
             "title": "in do voluptate quis",
-            "type": "undefined",
+            "type": "text",
             "text": "officia laboris labore commodo ex aliquip ut",
             "date": "2016-08-17T10:10:28",
             "numVotes": 876,
@@ -1832,7 +1832,7 @@ angular.module('reddiato')
           },
           {
             "title": "pariatur sint velit",
-            "type": "undefined",
+            "type": "text",
             "text": "nulla minim consequat aliqua officia cupidatat dolor ipsum ullamco mollit laborum consequat excepteur do nisi aliquip",
             "date": "2014-02-07T03:02:56",
             "numVotes": 140,
@@ -1840,7 +1840,7 @@ angular.module('reddiato')
           },
           {
             "title": "Lorem laborum occaecat irure mollit",
-            "type": "undefined",
+            "type": "text",
             "text": "ullamco mollit Lorem do voluptate",
             "date": "2014-04-16T08:00:03",
             "numVotes": 101,
@@ -1856,7 +1856,7 @@ angular.module('reddiato')
           },
           {
             "title": "sunt adipisicing minim",
-            "type": "undefined",
+            "type": "text",
             "text": "fugiat ipsum proident aliquip tempor velit est cillum veniam proident commodo sint magna aliqua",
             "date": "2015-11-09T04:33:57",
             "numVotes": 899,
@@ -1904,7 +1904,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "est aliqua dolore in",
-            "type": "undefined",
+            "type": "text",
             "text": "ipsum laboris aute cillum velit pariatur in labore veniam anim tempor tempor irure ad enim",
             "date": "2014-11-06T09:20:48",
             "numVotes": 256,
@@ -1912,7 +1912,7 @@ angular.module('reddiato')
           },
           {
             "title": "fugiat minim labore irure",
-            "type": "undefined",
+            "type": "text",
             "text": "laboris esse tempor dolor occaecat non velit duis",
             "date": "2015-07-09T09:47:40",
             "numVotes": 937,
@@ -1920,7 +1920,7 @@ angular.module('reddiato')
           },
           {
             "title": "qui duis dolor",
-            "type": "undefined",
+            "type": "text",
             "text": "labore irure consectetur et pariatur consectetur velit labore tempor magna qui sunt labore veniam cupidatat",
             "date": "2014-11-18T09:40:12",
             "numVotes": 412,
@@ -1928,7 +1928,7 @@ angular.module('reddiato')
           },
           {
             "title": "ut incididunt magna duis adipisicing",
-            "type": "undefined",
+            "type": "text",
             "text": "officia deserunt mollit dolor fugiat do ad sint adipisicing Lorem amet",
             "date": "2015-02-27T07:41:44",
             "numVotes": 783,
@@ -1936,7 +1936,7 @@ angular.module('reddiato')
           },
           {
             "title": "ea reprehenderit aliqua",
-            "type": "undefined",
+            "type": "text",
             "text": "sint fugiat aliquip dolore occaecat amet",
             "date": "2016-12-05T09:16:50",
             "numVotes": 237,
@@ -1944,7 +1944,7 @@ angular.module('reddiato')
           },
           {
             "title": "consequat elit aliquip",
-            "type": "undefined",
+            "type": "text",
             "text": "minim eu et id ut dolor sunt minim",
             "date": "2016-04-23T02:13:33",
             "numVotes": 699,
@@ -1952,7 +1952,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur cillum ex magna",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt labore aliquip excepteur occaecat velit excepteur voluptate mollit consectetur pariatur veniam enim labore Lorem",
             "date": "2016-03-17T03:08:42",
             "numVotes": 504,
@@ -1960,7 +1960,7 @@ angular.module('reddiato')
           },
           {
             "title": "qui enim proident",
-            "type": "undefined",
+            "type": "text",
             "text": "ipsum elit veniam reprehenderit adipisicing in cillum amet quis quis",
             "date": "2015-04-29T05:01:31",
             "numVotes": 273,
@@ -1968,7 +1968,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur culpa ex tempor",
-            "type": "undefined",
+            "type": "text",
             "text": "fugiat eiusmod incididunt incididunt ea officia voluptate",
             "date": "2015-11-20T06:07:07",
             "numVotes": 281,
@@ -1976,7 +1976,7 @@ angular.module('reddiato')
           },
           {
             "title": "ut non dolore aliqua",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt et sit tempor fugiat ad cillum aliquip sunt",
             "date": "2014-04-28T11:43:12",
             "numVotes": 459,
@@ -2024,7 +2024,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "est aliqua dolore in",
-            "type": "undefined",
+            "type": "text",
             "text": "ipsum laboris aute cillum velit pariatur in labore veniam anim tempor tempor irure ad enim",
             "date": "2014-11-06T09:20:48",
             "numVotes": 256,
@@ -2032,7 +2032,7 @@ angular.module('reddiato')
           },
           {
             "title": "fugiat minim labore irure",
-            "type": "undefined",
+            "type": "text",
             "text": "laboris esse tempor dolor occaecat non velit duis",
             "date": "2015-07-09T09:47:40",
             "numVotes": 937,
@@ -2040,7 +2040,7 @@ angular.module('reddiato')
           },
           {
             "title": "qui duis dolor",
-            "type": "undefined",
+            "type": "text",
             "text": "labore irure consectetur et pariatur consectetur velit labore tempor magna qui sunt labore veniam cupidatat",
             "date": "2014-11-18T09:40:12",
             "numVotes": 412,
@@ -2048,7 +2048,7 @@ angular.module('reddiato')
           },
           {
             "title": "ut incididunt magna duis adipisicing",
-            "type": "undefined",
+            "type": "text",
             "text": "officia deserunt mollit dolor fugiat do ad sint adipisicing Lorem amet",
             "date": "2015-02-27T07:41:44",
             "numVotes": 783,
@@ -2056,7 +2056,7 @@ angular.module('reddiato')
           },
           {
             "title": "ea reprehenderit aliqua",
-            "type": "undefined",
+            "type": "text",
             "text": "sint fugiat aliquip dolore occaecat amet",
             "date": "2016-12-05T09:16:50",
             "numVotes": 237,
@@ -2064,7 +2064,7 @@ angular.module('reddiato')
           },
           {
             "title": "consequat elit aliquip",
-            "type": "undefined",
+            "type": "text",
             "text": "minim eu et id ut dolor sunt minim",
             "date": "2016-04-23T02:13:33",
             "numVotes": 699,
@@ -2072,7 +2072,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur cillum ex magna",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt labore aliquip excepteur occaecat velit excepteur voluptate mollit consectetur pariatur veniam enim labore Lorem",
             "date": "2016-03-17T03:08:42",
             "numVotes": 504,
@@ -2080,7 +2080,7 @@ angular.module('reddiato')
           },
           {
             "title": "qui enim proident",
-            "type": "undefined",
+            "type": "text",
             "text": "ipsum elit veniam reprehenderit adipisicing in cillum amet quis quis",
             "date": "2015-04-29T05:01:31",
             "numVotes": 273,
@@ -2088,7 +2088,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur culpa ex tempor",
-            "type": "undefined",
+            "type": "text",
             "text": "fugiat eiusmod incididunt incididunt ea officia voluptate",
             "date": "2015-11-20T06:07:07",
             "numVotes": 281,
@@ -2096,7 +2096,7 @@ angular.module('reddiato')
           },
           {
             "title": "ut non dolore aliqua",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt et sit tempor fugiat ad cillum aliquip sunt",
             "date": "2014-04-28T11:43:12",
             "numVotes": 459,
@@ -2144,7 +2144,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "est aliqua dolore in",
-            "type": "undefined",
+            "type": "text",
             "text": "ipsum laboris aute cillum velit pariatur in labore veniam anim tempor tempor irure ad enim",
             "date": "2014-11-06T09:20:48",
             "numVotes": 256,
@@ -2152,7 +2152,7 @@ angular.module('reddiato')
           },
           {
             "title": "fugiat minim labore irure",
-            "type": "undefined",
+            "type": "text",
             "text": "laboris esse tempor dolor occaecat non velit duis",
             "date": "2015-07-09T09:47:40",
             "numVotes": 937,
@@ -2160,7 +2160,7 @@ angular.module('reddiato')
           },
           {
             "title": "qui duis dolor",
-            "type": "undefined",
+            "type": "text",
             "text": "labore irure consectetur et pariatur consectetur velit labore tempor magna qui sunt labore veniam cupidatat",
             "date": "2014-11-18T09:40:12",
             "numVotes": 412,
@@ -2168,7 +2168,7 @@ angular.module('reddiato')
           },
           {
             "title": "ut incididunt magna duis adipisicing",
-            "type": "undefined",
+            "type": "text",
             "text": "officia deserunt mollit dolor fugiat do ad sint adipisicing Lorem amet",
             "date": "2015-02-27T07:41:44",
             "numVotes": 783,
@@ -2176,7 +2176,7 @@ angular.module('reddiato')
           },
           {
             "title": "ea reprehenderit aliqua",
-            "type": "undefined",
+            "type": "text",
             "text": "sint fugiat aliquip dolore occaecat amet",
             "date": "2016-12-05T09:16:50",
             "numVotes": 237,
@@ -2184,7 +2184,7 @@ angular.module('reddiato')
           },
           {
             "title": "consequat elit aliquip",
-            "type": "undefined",
+            "type": "text",
             "text": "minim eu et id ut dolor sunt minim",
             "date": "2016-04-23T02:13:33",
             "numVotes": 699,
@@ -2192,7 +2192,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur cillum ex magna",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt labore aliquip excepteur occaecat velit excepteur voluptate mollit consectetur pariatur veniam enim labore Lorem",
             "date": "2016-03-17T03:08:42",
             "numVotes": 504,
@@ -2200,7 +2200,7 @@ angular.module('reddiato')
           },
           {
             "title": "qui enim proident",
-            "type": "undefined",
+            "type": "text",
             "text": "ipsum elit veniam reprehenderit adipisicing in cillum amet quis quis",
             "date": "2015-04-29T05:01:31",
             "numVotes": 273,
@@ -2208,7 +2208,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur culpa ex tempor",
-            "type": "undefined",
+            "type": "text",
             "text": "fugiat eiusmod incididunt incididunt ea officia voluptate",
             "date": "2015-11-20T06:07:07",
             "numVotes": 281,
@@ -2216,7 +2216,7 @@ angular.module('reddiato')
           },
           {
             "title": "ut non dolore aliqua",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt et sit tempor fugiat ad cillum aliquip sunt",
             "date": "2014-04-28T11:43:12",
             "numVotes": 459,
@@ -2264,7 +2264,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "est aliqua dolore in",
-            "type": "undefined",
+            "type": "text",
             "text": "ipsum laboris aute cillum velit pariatur in labore veniam anim tempor tempor irure ad enim",
             "date": "2014-11-06T09:20:48",
             "numVotes": 256,
@@ -2272,7 +2272,7 @@ angular.module('reddiato')
           },
           {
             "title": "fugiat minim labore irure",
-            "type": "undefined",
+            "type": "text",
             "text": "laboris esse tempor dolor occaecat non velit duis",
             "date": "2015-07-09T09:47:40",
             "numVotes": 937,
@@ -2280,7 +2280,7 @@ angular.module('reddiato')
           },
           {
             "title": "qui duis dolor",
-            "type": "undefined",
+            "type": "text",
             "text": "labore irure consectetur et pariatur consectetur velit labore tempor magna qui sunt labore veniam cupidatat",
             "date": "2014-11-18T09:40:12",
             "numVotes": 412,
@@ -2288,7 +2288,7 @@ angular.module('reddiato')
           },
           {
             "title": "ut incididunt magna duis adipisicing",
-            "type": "undefined",
+            "type": "text",
             "text": "officia deserunt mollit dolor fugiat do ad sint adipisicing Lorem amet",
             "date": "2015-02-27T07:41:44",
             "numVotes": 783,
@@ -2296,7 +2296,7 @@ angular.module('reddiato')
           },
           {
             "title": "ea reprehenderit aliqua",
-            "type": "undefined",
+            "type": "text",
             "text": "sint fugiat aliquip dolore occaecat amet",
             "date": "2016-12-05T09:16:50",
             "numVotes": 237,
@@ -2304,7 +2304,7 @@ angular.module('reddiato')
           },
           {
             "title": "consequat elit aliquip",
-            "type": "undefined",
+            "type": "text",
             "text": "minim eu et id ut dolor sunt minim",
             "date": "2016-04-23T02:13:33",
             "numVotes": 699,
@@ -2312,7 +2312,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur cillum ex magna",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt labore aliquip excepteur occaecat velit excepteur voluptate mollit consectetur pariatur veniam enim labore Lorem",
             "date": "2016-03-17T03:08:42",
             "numVotes": 504,
@@ -2320,7 +2320,7 @@ angular.module('reddiato')
           },
           {
             "title": "qui enim proident",
-            "type": "undefined",
+            "type": "text",
             "text": "ipsum elit veniam reprehenderit adipisicing in cillum amet quis quis",
             "date": "2015-04-29T05:01:31",
             "numVotes": 273,
@@ -2328,7 +2328,7 @@ angular.module('reddiato')
           },
           {
             "title": "consectetur culpa ex tempor",
-            "type": "undefined",
+            "type": "text",
             "text": "fugiat eiusmod incididunt incididunt ea officia voluptate",
             "date": "2015-11-20T06:07:07",
             "numVotes": 281,
@@ -2336,7 +2336,7 @@ angular.module('reddiato')
           },
           {
             "title": "ut non dolore aliqua",
-            "type": "undefined",
+            "type": "text",
             "text": "incididunt et sit tempor fugiat ad cillum aliquip sunt",
             "date": "2014-04-28T11:43:12",
             "numVotes": 459,
@@ -2399,7 +2399,7 @@ angular.module('reddiato')
         "posts": [
           {
             "title": "ex occaecat commodo aliquip culpa",
-            "type": "undefined",
+            "type": "text",
             "text": "eiusmod exercitation dolor sit ea consequat amet do labore",
             "date": "2015-03-16T05:09:58",
             "numVotes": 637,
@@ -2407,7 +2407,7 @@ angular.module('reddiato')
           },
           {
             "title": "voluptate velit excepteur duis",
-            "type": "undefined",
+            "type": "text",
             "text": "sit elit fugiat cupidatat et pariatur dolore pariatur est anim dolor dolor",
             "date": "2016-05-16T07:13:14",
             "numVotes": 922,
@@ -2415,7 +2415,7 @@ angular.module('reddiato')
           },
           {
             "title": "est culpa est",
-            "type": "undefined",
+            "type": "text",
             "text": "non veniam fugiat adipisicing in velit ullamco sunt ut",
             "date": "2016-04-27T04:43:31",
             "numVotes": 690,
@@ -2423,7 +2423,7 @@ angular.module('reddiato')
           },
           {
             "title": "in do voluptate quis",
-            "type": "undefined",
+            "type": "text",
             "text": "officia laboris labore commodo ex aliquip ut",
             "date": "2016-08-17T10:10:28",
             "numVotes": 876,
@@ -2431,7 +2431,7 @@ angular.module('reddiato')
           },
           {
             "title": "pariatur sint velit",
-            "type": "undefined",
+            "type": "text",
             "text": "nulla minim consequat aliqua officia cupidatat dolor ipsum ullamco mollit laborum consequat excepteur do nisi aliquip",
             "date": "2014-02-07T03:02:56",
             "numVotes": 140,
@@ -2439,7 +2439,7 @@ angular.module('reddiato')
           },
           {
             "title": "Lorem laborum occaecat irure mollit",
-            "type": "undefined",
+            "type": "text",
             "text": "ullamco mollit Lorem do voluptate",
             "date": "2014-04-16T08:00:03",
             "numVotes": 101,
@@ -2455,7 +2455,7 @@ angular.module('reddiato')
           },
           {
             "title": "sunt adipisicing minim",
-            "type": "undefined",
+            "type": "text",
             "text": "fugiat ipsum proident aliquip tempor velit est cillum veniam proident commodo sint magna aliqua",
             "date": "2015-11-09T04:33:57",
             "numVotes": 899,

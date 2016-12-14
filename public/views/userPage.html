@@ -72,11 +72,15 @@
 
 				<div class="panel panel-default " ng-repeat="post in allUsers[currentUserId].posts | orderBy: 'date': true ">
 
-					<div class="panel-body">
+					<div ng-if="post.type == 'text'" class="panel-body">
 						<h3>  {{post.title}}  </h3> <br>
 						<p> {{post.text | limitTo: 18}} ...</p>
 					</div>
-
+					<div ng-if="post.type == 'link'" class="panel-body">
+						<h3>  {{post.title}}  </h3> <br>
+						<img style="max-height:300px;max-width:100%;" src="{{post.link}}" alt="http://www.immersion-3d.com/wp-content/uploads/2015/12/image-placeholder-500x500.jpg">
+						<!-- <p> {{post.text | limitTo: 18}} ...</p> -->
+					</div>
 
 					<div class="panel-footer" style="text-align:right">
 						<i class="fa fa-arrow-up" aria-hidden="true"></i> {{post.numVotes }} &nbsp; | &nbsp;

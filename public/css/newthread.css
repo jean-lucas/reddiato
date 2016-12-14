@@ -1,0 +1,24 @@
+#title-block {
+    margin-top: 15px;
+    display: inline;
+}
+.modal-title{
+
+}
+.padd{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.option-title {
+    display: inline;
+}
+.toggle-title{
+    display: inline;
+    text-align: center;
+}
+.selected{
+  color:green;
+}
+.border-red{
+  border: 1px solid red;
+}
