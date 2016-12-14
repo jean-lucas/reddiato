@@ -24,7 +24,7 @@ angular.module('newThreadCtrl', [])
                 self.text = null;
                 self.link = null;
                 if (!$scope.selected) {
-                    self.element_type = "link";
+                    self.type = "link";
                     self.link = $("#link").val();
                 } else {
                     self.type = "text";
@@ -39,6 +39,7 @@ angular.module('newThreadCtrl', [])
                     numVotes: 0,
                     numComments: 0
                 });
+                console.log($scope.allUsers[0]["posts"][0]);
                 // clear field values
                 $("#title").val("");
                 $("#link").val("");

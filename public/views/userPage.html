@@ -72,11 +72,15 @@
 
 				<div class="panel panel-default " ng-repeat="post in allUsers[currentUserId].posts | orderBy: 'date': true ">
 
-					<div class="panel-body">
+					<div ng-if="post.type == 'text'" class="panel-body">
 						<h3>  {{post.title}}  </h3> <br>
 						<p> {{post.text | limitTo: 18}} ...</p>
 					</div>
-
+					<div ng-if="post.type == 'link'" class="panel-body">
+						<h3>  {{post.title}}  </h3> <br>
+						<img src="{{post.link}}" >
+						<!-- <p> {{post.text | limitTo: 18}} ...</p> -->
+					</div>
 
 					<div class="panel-footer" style="text-align:right">
 						<i class="fa fa-arrow-up" aria-hidden="true"></i> {{post.numVotes }} &nbsp; | &nbsp;
