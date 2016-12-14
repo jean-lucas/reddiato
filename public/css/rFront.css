@@ -2,6 +2,10 @@
   margin-bottom: 15px;
 }
 
+.thread-card:hover {
+  cursor: pointer;
+}
+
 .thread-header {
   padding: 10px;
 }
