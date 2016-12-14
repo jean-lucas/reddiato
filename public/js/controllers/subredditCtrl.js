@@ -22,9 +22,7 @@ angular.module('subredditCtrl', [])
       var uName = $scope.allUsers[$scope.currentUserId].username;
       var newTab = $scope.createTab("/u/"+ uName);
       $scope.tabs.prepend(newTab);
-			$timeout(function() {
-				$scope.switchContent("/u/"+ uName);
-		});
+			$scope.switchContent("/u/"+ uName);
 
 	}
 

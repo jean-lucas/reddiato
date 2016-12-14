@@ -1,5 +1,5 @@
 angular.module('reddiato')
-.directive('reddiatoTabs', function($compile) {
+.directive('reddiatoTabs', function($timeout, $compile) {
   var linkFn;
   linkFn = function(scope, element, attrs) {
     scope.subredditDrawer = angular.element(element.children()[0]);
@@ -22,15 +22,6 @@ angular.module('reddiato')
       if (name.startsWith('/r/')){
         template_name = getTemplateName(name);
       }
-      //   else if (name.startsWith('/u/')) {
-      //   var username = name.substring(3);
-      //   for (var i = 0; i < scope.allUsers.length; i++) {
-      //     if (scope.allUsers[i].username == name) {
-      //       scope.currentUserId = i;
-      //       break;
-      //     }
-      //   }
-      // }
 
       scope.switchContent(template_name);
     });
@@ -81,10 +72,23 @@ angular.module('reddiato')
 
     scope.switchContent = function(tabName) {
       var tabType = tabName.split('/')[1];
-      var content_id = '#'+ tabType +'-' + tabName.substring(3);
-      $('body').find('.content').children().fadeOut(0,function() {
-        $(content_id).fadeIn(0)
+      var name = tabName.substring(3);
+      var content_id = '#'+ tabType +'-' + name;
+
+      if (tabName.startsWith('/u/')) {
+        for (var i = 0; i < scope.allUsers.length; i++) {
+          if (scope.allUsers[i].username === name) {
+            scope.currentUserId = i;
+            break;
+          }
+        }
+      }
+      $timeout(function(){
+        $('body').find('.content').children().fadeOut(0,function() {
+          $(content_id).fadeIn(0)
+        });
       });
+
     };
 
     getTemplateName = function(name) {
@@ -1045,7 +1049,7 @@ angular.module('reddiato')
         ]
       },
       {
-        "id": 110,
+        "id": 10,
         "username": "GallowBoob",
         "karma": 349,
         "memberSince": "2014-04-29T02:47:43",
@@ -1161,7 +1165,7 @@ angular.module('reddiato')
         ]
       },
       {
-        "id": 1,
+        "id": 11,
         "username": "Auggernaut88",
         "karma": 1226,
         "memberSince": "2014-06-19T10:26:31",
@@ -1302,7 +1306,7 @@ angular.module('reddiato')
         ]
       },
       {
-        "id": 2,
+        "id": 12,
         "username": "annekar",
         "karma": 562,
         "memberSince": "2015-01-20T10:48:48",
@@ -1448,7 +1452,7 @@ angular.module('reddiato')
         ]
       },
       {
-        "id": 3,
+        "id": 13,
         "username": "iBleeedorange",
         "karma": 704,
         "memberSince": "2014-05-31T04:04:48",
@@ -1583,7 +1587,7 @@ angular.module('reddiato')
         ]
       },
       {
-        "id": 4,
+        "id": 14,
         "username": "dustofoblivion123",
         "karma": 1967,
         "memberSince": "2016-09-21T07:21:45",
@@ -1656,7 +1660,7 @@ angular.module('reddiato')
         ]
       },
       {
-        "id": 5,
+        "id": 15,
         "username": "Business__Socks",
         "karma": 1795,
         "memberSince": "2015-05-27T06:51:51",
@@ -1861,7 +1865,7 @@ angular.module('reddiato')
         ]
       },
       {
-        "id": 7,
+        "id": 17,
         "username": "DmitryGlukhovsky",
         "karma": 1819,
         "memberSince": "2014-10-11T06:00:49",
@@ -1981,7 +1985,7 @@ angular.module('reddiato')
         ]
       },
        {
-        "id": 7,
+        "id": 18,
         "username": "Dre_wj",
         "karma": 1819,
         "memberSince": "2014-10-11T06:00:49",
@@ -2101,7 +2105,7 @@ angular.module('reddiato')
         ]
       },
        {
-        "id": 7,
+        "id": 19,
         "username": "kushybushy12345678",
         "karma": 1819,
         "memberSince": "2014-10-11T06:00:49",
@@ -2221,7 +2225,7 @@ angular.module('reddiato')
         ]
       },
         {
-        "id": 7,
+        "id": 20,
         "username": "calikings20",
         "karma": 1819,
         "memberSince": "2014-10-11T06:00:49",
@@ -2341,7 +2345,7 @@ angular.module('reddiato')
         ]
       },
       {
-        "id": 6,
+        "id": 21,
         "username": "HirsuiteHeathen",
         "karma": 1647,
         "memberSince": "2016-10-29T08:41:45",
