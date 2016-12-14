@@ -38,7 +38,7 @@ angular.module('subredditCtrl', [])
 
 	this.userVoted = false;
 	this.upvote = function($event, index) {
-		if (!index) {
+		if (typeof index == 'undefined') {
 			index = self.selectedThread;
 		}
     if ($('.down-arrow-select').length === 0 ) {
@@ -55,7 +55,7 @@ angular.module('subredditCtrl', [])
 	};
 
 	this.downvote = function($event, index) {
-		if (!index) {
+		if (typeof index == 'undefined') {
 			index = self.selectedThread;
 		}
     if ($('.up-arrow-select').length === 0 ) {
