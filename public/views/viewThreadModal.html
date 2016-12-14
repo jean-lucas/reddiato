@@ -1,8 +1,4 @@
-<div ng-controller="threadController as threadCtrl" class="">
-
-
 	<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#viewThreadModal">Open Modal</button> -->
-
 	<div id="viewThreadModal" class="modal">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -11,15 +7,15 @@
 						<!-- Block of code for all arrows and scores hopefully -->
 						<div class="col-xs-1 arrows">
 
-							<i id="uparrow" ng-click="upvote()" style="font-size:20px;" class="fa fa-arrow-up up-arrow" aria-hidden="true"></i>
+							<i id="uparrow" ng-click="sCtrl.upvote($event)" style="font-size:20px;" class="fa fa-arrow-up up-arrow" aria-hidden="true"></i>
 
-							<span class="score" ng-model="score">{{threadCtrl.score}}</span>
+							<span class="score" >{{sCtrl.frontPosts[sCtrl.selectedThread]['votes']}}</span>
 
-							<i id="downarrow" ng-click="downvote()" style="font-size:20px;" class="fa fa-arrow-down down-arrow" aria-hidden="true"></i>
+							<i id="downarrow" ng-click="sCtrl.downvote($event)" style="font-size:20px;" class="fa fa-arrow-down down-arrow" aria-hidden="true"></i>
 						</div>
 
 						<div class="col-xs-10">
-							<h4 class="modal-title">I freed up some much needed floor space by creating recessed wall shelves for my entertainment center</h4>
+							<h4 class="modal-title">{{sCtrl.frontPosts[sCtrl.selectedThread]['name']}}</h4>
 
 						</div>
 						<div class="col-xs-1">
@@ -29,13 +25,13 @@
 					<div class="row">
 						<div class="col-xs-offset-1 col-xs-10">
 							<div class="subtitle">
-								/r/subreddit
+								{{sCtrl.frontPosts[sCtrl.selectedThread]['subreddit']}}
 							</div>
 							<div class="subtitle">
-								10 minutes ago
+								{{sCtrl.frontPosts[sCtrl.selectedThread]['timeSincePost']}} ago
 							</div>
 							<div class="subtitle">
-								1934 comments
+								{{sCtrl.frontPosts[sCtrl.selectedThread]['numComments']}} comments
 							</div>
 						</div>
 					</div>
@@ -45,7 +41,7 @@
 					<div class="row">
 						<div class="col-xs-10 col-xs-offset-1">
 
-							<img class="post-image" src="https://placekitten.com/g/450/300">
+							<img class="post-image" src={{sCtrl.frontPosts[sCtrl.selectedThread]['img']}}>
 							<!--  https://i.redd.it/kjdf6aye662y.jpg -->
 						</div>
 					</div>
@@ -119,4 +115,3 @@
 			</div>
 		</div>
 	</div>
-</div>

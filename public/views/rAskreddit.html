@@ -3,13 +3,13 @@
 		<div class="card shadow thread-card">
 			<div class="card-content">
 
-				<div class="card-body thread-body">
+				<div ng-click="sCtrl.viewThread($index+6)"class="card-body thread-body">
 					<div>
 						{{p.name}}
 					</div>
 					<div>
 						<div>
-							<span class="user">{{p.user}}</span>
+							<span class="user" ng-click="sCtrl.goToUserPage(p.user)">{{p.user}}</span>
 							<span class="subreddit">&bull; {{p.subreddit}}</span>
 							<span class="time">{{p.timeSincePost}} ago.</span>
 						</div>

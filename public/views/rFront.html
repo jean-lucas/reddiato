@@ -2,11 +2,11 @@
 	<div class="col-lg-2 col-sm-4" ng-repeat="p in sCtrl.frontPosts | limitTo: 6">
 		<div class="card shadow thread-card">
 			<div class="card-content">
-				<div class="card-header thread-header">
+				<div ng-click="sCtrl.viewThread($index)" class="card-header thread-header">
 					{{p.name}}
 				</div>
 
-				<div class="card-image" style="max-height: 300px;">
+				<div ng-click="sCtrl.viewThread($index)" class="card-image" style="max-height: 300px;">
 					<img src={{p.img}} alt="Loading image...">
 				</div>
 
@@ -38,7 +38,7 @@
 		<div class="card shadow thread-card">
 			<div class="card-content">
 
-				<div class="card-body thread-body">
+				<div ng-click="sCtrl.viewThread($index+6)"class="card-body thread-body">
 					<div>
 						{{p.name}}
 					</div>
