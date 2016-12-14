@@ -13,7 +13,8 @@
 				Post Karma: {{allUsers[currentUserId].karma}} <br> Member Since : {{allUsers[currentUserId].memberSince | date : "MMMM y"}}
 
 				<div class="userContact" ng-hide="currentUserId == 0">
-					<button class="btn btn-raised btn-primary messages" type="button" data-toggle="modal" data-target="#chatModal">
+					<button class="btn btn-raised btn-primary messages" type="button" data-toggle="modal" data-target="#chatModal" 
+							ng-click="activeChatId = chatList.length + 1; uCtrl.startChat(allUsers[currentUserId].username)">
 					Message {{allUsers[currentUserId].username}}
 				</button>
 
@@ -96,5 +97,14 @@
 
 
 	</div>
+
+
+	<script>
+		
+
+			
+
+
+	</script>
 
 </div>

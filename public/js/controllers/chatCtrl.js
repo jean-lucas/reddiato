@@ -1,18 +1,18 @@
 angular.module('chatCtrl', [])
 
-	.controller('chatCtrl', function() {
+	.controller('chatCtrl', function($scope) {
 		var self = this;
 
 
 
-		this.activeChatId = 0;
+		// this.activeChatId = $scope.chatList.length -1;
 		this.currentBox = 0;
     this.msgWrite = "";
 
 
 
 		this.selectChat = function(val) {
-			self.activeChatId = val;
+			$scope.activeChatId = val;
 		}
 
     this.sendMsg =  function() {
@@ -25,7 +25,7 @@ angular.module('chatCtrl', [])
           "date" : new Date(),
         }
 
-        self.chatList[self.activeChatId].chat.push(msg);
+        $scope.chatList[$scope.activeChatId].chat.push(msg);
 
         //clear message after
         self.msgWrite = "";
@@ -35,7 +35,7 @@ angular.module('chatCtrl', [])
 
 
 
-
+/*
 
 		this.chatList = [
       {
@@ -698,7 +698,7 @@ angular.module('chatCtrl', [])
     ]
 
 
-
+*/
 
 
 	});

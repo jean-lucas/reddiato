@@ -24,7 +24,7 @@
 					Contacts
 				</div>
 
-				<button ng-repeat="contact in cCtrl.chatList track by $index" class="btn btn-raised contactListBtn" ng-click="cCtrl.selectChat($index)">
+				<button ng-repeat="contact in chatList  track by $index" class="btn btn-raised contactListBtn" ng-click="cCtrl.selectChat($index)">
 					<i class="fa-2x fa fa-user-circle-o" aria-hidden="true"></i> &nbsp; {{contact.name}}
 				</button>
 
@@ -41,13 +41,13 @@
 				
 
 				<div id="chat_title">
-					Talking with {{cCtrl.chatList[cCtrl.activeChatId].name}}
+					Talking with {{chatList[activeChatId].name}}
 				</div>
 
 				<!-- Chat bubbles -->
 	        	<div id="chat_content">
 					
-					<div  ng-repeat="msg in cCtrl.chatList[cCtrl.activeChatId].chat | orderBy: 'date':true" 
+					<div  ng-repeat="msg in chatList[activeChatId].chat | orderBy: 'date':true" 
 						class="well chatBoxes" ng-class="{chatBoxes_left: msg.from == 0, chatBoxes_right: msg.from == 1}">
 							{{msg.text}}
 
