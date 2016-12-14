@@ -1,10 +1,10 @@
-<div ng-controller="drawerController as drawerCtrl" class="">
+<div ng-controller="drawerController as drawerCtrl">
   <h1 class="page-title">{{drawerCtrl.title}}</h1>
   <div class="search-container">
     <div class="form-group search-container">
       <div class="input-group">
         <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
-        <input type="search" class="form-control" placeholder="Search..." ng-model="search">
+        <input id= "search" type="search" class="form-control" placeholder="Search..." ng-model="search">
         <span class="help-block">Search for subreddits</span>
       </div>
     </div>
